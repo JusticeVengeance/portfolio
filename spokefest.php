@@ -31,6 +31,7 @@
 </div>
 <!--END SOLUTION DIV-->
 <div id="result">
+<img src="img/4px_border_mane_white.png"/>
   <span class="copy">
     <h1>The Result</h1>
     <p>All efforts to increase registrations were successful, Spokefest 2015 had many more returning riders than in years past. I believe this was a result of increased awareness of incentives to register.</p>

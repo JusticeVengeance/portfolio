@@ -28,10 +28,13 @@ $document.scroll(function() {
 	 //         //scroll down
 	 //         console.log('Down');
 	 //         //hide my logo on scroll down
-	 //         $( "#logo" ).fadeOut(100);
+	 //         $( "#lion" ).fadeOut(100);
+	 //         $( "#name" ).fadeIn(100);
 	 //     }else {
 	 //         //scroll up
 	 //         console.log('Up');
+	 //         $( "#name" ).fadeOut(100);
+	 //         $( "#lion" ).fadeIn(100);
 	 //     }
 
 	 //     //prevent page fom scrolling

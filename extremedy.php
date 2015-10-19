@@ -34,6 +34,7 @@
 </div>
 <!--END SOLUTION DIV-->
 <div id="result">
+<img src="img/4px_border_mane_white.png"/>
   <span class="copy">
     <h1>The Result</h1>
     <p>The event successfully reached a level of attendance that was highly-satisfactory. ATD movement left spokane, very pleased with having organized an event, and someday wishes to return for another.</p>

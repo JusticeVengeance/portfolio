@@ -30,17 +30,7 @@
           <h1 class="top_right" id="menu_text">MENU</h1><h2 class="top_right" id="menu_icon">_<br/>_<br/>_</h2>
         </div> -->
       </div>
-    <!--<ul id="fftb">
-      <h1>fortune</h1>
-      <h1>favors</h1>
-      <h1>the</h1>
-      <h1>bold</h1>
-      <li class="down fill">
-        <figure id="fortune_circle">
-          <img src="img/down.gif"/>
-        </figure>
-      </li>
-    </ul> -->
+    
     <!--<div id="footer_nav"></div> -->        
     <!--<div class="title">
       <h1>A passionate bit</h1>
@@ -56,6 +46,19 @@
         <li>IS THE BEE'S KNEES</li>
         <li>IS THE MAKER'S MARK</li>
         </ul> -->
+<!--       <div id="fftb">
+    <h1>fortune</h1>
+    <h1>favors</h1>
+    <h1>the</h1>
+    <h1>bold</h1>
+    <ul>
+      <li class="down fill">
+        <div class="fortune_circle">
+          <img src="img/down.gif"/>
+        </div>
+      </li>
+  </ul> 
+  </div> -->
     </section>
     <section class="project_section work" id="work">
     <h1 id="about_me">MYWORK</h1>
@@ -121,22 +124,23 @@
     </div>
     </div>  
     </div> --><!--END SLIDE CONTAINER-->
-    <!-- <div class="section" id="goodstuff">
-      <h1>Logo Design</h1>
-      <div class="logos">
+    <div class="section" id="goodstuff">
+      <h1>Justin Vinge Design</h1>
+      <!-- <div class="logos">
       <img src="img/ref5esh_Logo.png">
       <img src="img/ref5esh_Logo.png">
       <img src="img/ref5esh_Logo.png">
       <img src="img/ref5esh_Logo.png">
       <img src="img/ref5esh_Logo.png">
-      </div>
-      <div class="comps">
+      </div> -->
+      <a href="jv@justinvinge.com"><h1>jv@justinvinge.com</h1></a>
+      <!-- <div class="comps">
       <img src="img/deviine_comp.png">
       <img src="img/deviine_comp.png">
-      </div>
-      <h1>My name is Justin Daniel Vinge, I am a designer and a full stack web devloper. I work mostly with HTML, PHP, CSS, and Javascript. I take pride in everything I seek to accomplish, and pride in one's work is the best thing you can ask for.  </h1>
-      <img src="img/spokefest_square.jpg" alt="" />
+      </div> -->
+<!--       <h1>My name is Justin Daniel Vinge, I am a designer and a full stack web devloper. I work mostly with HTML, PHP, CSS, and Javascript. I take pride in everything I seek to accomplish, and pride in one's work is the best thing you can ask for.  </h1>
+ -->
     </div>
-    <div class="section" id="about"></div> -->
+    <!-- <div class="section" id="about"></div> -->
   </body>
 </html>
