@@ -6,9 +6,9 @@
   </div>
   <div id="phone">
     <img src="img/border_phone.png" alt="phone top" />
-    <span class="copy">
+    <div class="copy">
       <p>Through research, I gathered that the most sizable return came from relatable imagery which users were not likely to scroll past without first looking over.</p>
-    </span>
+  </div>
   </div>
 </div>
 <!--END CHALLENGE-sf DIV-->

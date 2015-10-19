@@ -9,7 +9,8 @@ $('#name').hide();
 $(document).ready(function() {
 	 var j = 0;
 	 var delay = 3500; //millisecond delay between cycles
-	 function cycleThru(){
+	 function cycleThru(e){
+	 	e.preventDefault();
 	         var jmax = $("ul#line3 li").length -1;
 	         $("ul#line3 li:eq(" + j + ")")
 	                 .animate({"opacity" : "1"} ,400)
