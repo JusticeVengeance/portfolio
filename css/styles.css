@@ -665,8 +665,10 @@ ul#line3 li {
   background-repeat: no-repeat;
   left: 0;
   height: 100vh;
+  position: relative;
   top: 0;
   width: 100%;
+  z-index: -2;
 }
 
 #challenge-sf {
@@ -706,8 +708,10 @@ ul#line3 li {
 
 #result {
   clear: both;
-  height: 500px;
+  height: auto;
+  position: relative;
   width: 100%;
+  z-index: -2;
 }
 
 #result h1 {
@@ -727,22 +731,20 @@ ul#line3 li {
   padding: 100px 10% 0 10%;
 }
 
-#solution::after {
-  background-image: url('../img/4px_border_mane_white.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  content: " ";
-  display: block;
-  height: 178px;
-  left: -184px;
-  margin-left: 50%;
+#result img {
+  position: absolute;
+  margin-left: -182.5px;
+  left: 50%;
+  width: 375px;
   margin-top: 10px;
-  width: 368px;
 }
 
 #solution {
+  background-color: #ffffff;
   height: auto;
+  position: relative;
   width: 100%;
+  z-index: -2;
 }
 
 #solution .copy p {
@@ -787,15 +789,16 @@ ul#line3 li {
   left: -187.5px;
   margin-left: 50%;
   position: absolute;
-  margin-top: 43.8vh;
+  margin-top: 43vh;
   width: 375px;
 }
 
 #phone .copy {
   border-right: 5px solid #FC9115;
-  height: 20vh;
+  height: 25vh;
   margin: 0 auto;
   width: 370px;
+  z-index: -3;
 }
 
 #phone .copy p {

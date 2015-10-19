@@ -6,9 +6,9 @@
   </div>
   <div id="phone">
     <img src="img/border_phone.png" alt="phone top" />
-    <span class="copy">
+    <div class="copy">
     <p>The most successful advertising came from a consumer's ability to see the products in person. </p>
-  </span>
+  </div>
   </div>
 </div>
 <!--END CHALLENGE DIV-->
@@ -34,6 +34,7 @@
 </div>
 <!--END SOLUTION DIV-->
 <div id="result">
+<img src="img/4px_border_mane_white.png"/>
   <span class="copy">
     <h1>The Result</h1>
     <p>Today, ref5esh remains an identity which works to minimize the carbon footprint, while also benefiting local non-profits.</p>
