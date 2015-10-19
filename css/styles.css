@@ -308,7 +308,7 @@ h1, h2 {
   float: left;
   overflow: hidden;
 }
-a.logo:hover {
+.logo:hover {
   margin-left: 0px;
   float: left;
   overflow: hidden;

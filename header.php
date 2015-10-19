@@ -18,12 +18,14 @@
 
   <body>
   <div id="header">
-      <a class="logo" href="index.php">  
+  <div class="logo">
+      <a href="index.php">  
         <div id="logo">
           <div id="lion"><img class="top_left" src="img/logo5.png"/></div>
           <div id="name"><h2 class="top_left">JUSTIN<br>VINGE<br>DESIGN</h2></div>
         </div><!--END LOGO DIV-->
       </a>
+  </div>
         <!-- <ul id="nav">
         </ul>
         <div id="menu">
