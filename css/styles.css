@@ -24,6 +24,7 @@
   width: 40%;
 }
 .ads img:nth-child(2) {
+  float: right;
   width: 40%;
 }
 body { 
@@ -677,7 +678,7 @@ ul#line3 li {
 }
 
 #challenge-f5 {
-  background-image: url('../img/table-background.jpg');
+  background-image: url('../img/table_background.jpg');
 }
 
 .challenge .copy {
@@ -704,6 +705,7 @@ ul#line3 li {
 }
 
 #result {
+  clear: both;
   height: 500px;
   width: 100%;
 }
@@ -725,7 +727,7 @@ ul#line3 li {
   padding: 100px 10% 0 10%;
 }
 
-#solution:after {
+#solution::after {
   background-image: url('../img/4px_border_mane_white.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -735,7 +737,6 @@ ul#line3 li {
   left: -184px;
   margin-left: 50%;
   margin-top: 10px;
-  position: absolute;
   width: 368px;
 }
 
