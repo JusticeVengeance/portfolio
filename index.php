@@ -124,22 +124,26 @@
     </div>
     </div>  
     </div> --><!--END SLIDE CONTAINER-->
+    
     <div class="section" id="goodstuff">
-      <h1>Justin Vinge Design</h1>
-      <!-- <div class="logos">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      </div> -->
-      <a href="jv@justinvinge.com"><h1>jv@justinvinge.com</h1></a>
-      <!-- <div class="comps">
-      <img src="img/deviine_comp.png">
-      <img src="img/deviine_comp.png">
-      </div> -->
+<!--     <div class="logos">
+      <h1>Logo Design</h1>
+      <img src="img/ref5esh_Logo.png"><br>
+      <img src="img/ref5esh_Logo.png"><br>
+    </div> -->
+      <h1>Web Design</h1>
+      <div class="comps">
+      <img src="img/deviine-zoom.jpg">
+      <img src="img/deviine-comp.png">
+      <img src="img/deviine-rate.jpg">
+      <a target="_blank" href="http://deviine.com/beta"><h2>DeViine</h2></a>      
+    </div>
 <!--       <h1>My name is Justin Daniel Vinge, I am a designer and a full stack web devloper. I work mostly with HTML, PHP, CSS, and Javascript. I take pride in everything I seek to accomplish, and pride in one's work is the best thing you can ask for.  </h1>
  -->
+    </div>
+    <div class="section" id="contact">
+      <h1>Justin Vinge Design</h1>
+      <a href="jv@justinvinge.com"><h1>jv@justinvinge.com</h1></a>
     </div>
     <!-- <div class="section" id="about"></div> -->
   </body>

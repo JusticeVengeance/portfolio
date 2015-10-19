@@ -38,6 +38,31 @@ body {
   z-index: -4;
 }
 /*BEGIN PAGE STYLING*/
+#contact {
+  background-color: #333333;
+  clear: both; 
+  float: left;
+  margin-top: 10px;
+  position: relative;
+  height: auto;
+  width: 100%;
+  z-index: 4;
+}
+#contact h1 {
+  color: #fff;
+  float: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  text-transform: uppercase;
+}
+#contact a h1 {
+  color: #fff;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+}
 figure#fortune_circle {
 	border-radius: 50%;
   background: rgb(155, 155, 155);
@@ -262,45 +287,67 @@ figure#fortune_circle {
   }
 }
 #goodstuff {
-  background-color: #333333; 
-/*  border-top: 5px solid #333333;
-*/  padding: 10px;
+  background-color: #fff;
+  border-top: 8px solid #333; 
   position: relative;
-  height: 25px;
   z-index: 4;
 }
-#goodstuff h1 {
-/*  clear: both;
-*/  color: #fff;
-  float: left;
+#goodstuff a {
+  text-decoration: none;
+}
+#goodstuff a h2:hover {
+  color: #FC9115;
+}
+#goodstuff h1:first-child {
+  clear: both;
+  color: #333;
   font-family: 'Oswald', sans-serif;
-  font-size: 1em;
-  /*left: -90px;
-  margin: 100px 0 0 50%;*/
+  font-size: 3em;
+  text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  /*width: 180px;*/
 }
-#goodstuff a h1 {
-/*  clear: both;
-*/  color: #fff;
+#goodstuff h1:nth-child(2) {
+  clear: both;
+  color: #fff;
   float: right;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
-  /*left: -90px;
-  margin: 100px 0 0 50%;*/
+  left: -90px;
+  margin: 100px 0 0 50%;
   text-transform: uppercase;
   white-space: nowrap;
-  /*width: 180px;*/
+  width: 180px;
+}
+#goodstuff h2 {
+  clear: both;
+  color: #333;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  width: 5%;
 }
 #goodstuff .comps img {
-  margin: 1% 0 0 1%;
-  width: 40%;
+  float: left;
+  margin-left: 6.75%;
+  margin-top: 50px;
+}
+#goodstuff .comps img:first-child {
+  width: 25%;
+}
+#goodstuff .comps img:nth-child(2) {
+  width: 35%;
+}
+#goodstuff .comps img:nth-child(3) {
+  width: 13%;
 }
 #goodstuff .logos img {
   border: 2px solid #333333;
+  float: left;
   margin: 1% 0 0 1%;
-  width: 18.5%;
+  width: 16%;
 }
 /*#header {
   background-image: url('../img/header.jpg');
@@ -392,6 +439,9 @@ h1, h2 {
   width: 171px;
   height: 70px;
 }*/
+.logos {
+  height: auto;
+}
 #logo {
   background-color:rgba(252, 145, 21, 0.35);
   float: left;
