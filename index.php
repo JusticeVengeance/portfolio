@@ -73,7 +73,8 @@
         <div class="project extremedy">
           <div class="project_container">
             <a href="extremedy.php" class="project-copy" style="opacity: 1; top: 0px;">
-              <span class="line-1"><h1>ATD Movement</h1></span>
+              <span><h1>ATD Movement</h1></span>
+                  <div class="divider"></div>
               <span class="services"><p>Digital & Graphic Event Promotion</p></span>
             </a>
           </div>
@@ -81,7 +82,10 @@
         <div class="project spokefest">
           <div class="project_container">
             <a href="spokefest.php" class="project-copy" style="opacity: 1; top: 0px;">
-              <span class="line-1"><h1>Spokefest</h1></span>
+              <span><h1>Spokefest</h1></span>
+              <div style="position:relative">
+                  <div class="divider"></div>
+              </div>              
               <span class="services"><p>Social Media Campaign</p></span>
             </a>
           </div>
@@ -89,7 +93,10 @@
         <div class="project ref5esh">
           <div class="project_container">
             <a href="ref5esh.php" class="project-copy" style="opacity: 1; top: 0px;">
-              <span class="line-1"><h1>ref5esh</h1></span>
+              <span><h1>ref5esh</h1></span>
+              <div style="position:relative">
+                  <div class="divider"></div>
+              </div>
               <span class="services"><p>Industrial & Print Design</p></span>
             </a>
           </div>

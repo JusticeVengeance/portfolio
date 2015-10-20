@@ -63,6 +63,10 @@ body {
   font-size: 1em;
   text-transform: uppercase;
 }
+.divider {
+  background-color: #FC9115;
+  height: 5px;
+}
 figure#fortune_circle {
 	border-radius: 50%;
   background: rgb(155, 155, 155);
@@ -656,7 +660,6 @@ h1, h2 {
     top: 120px;
 }
 .project_section.work .projects .project .project-copy h1 {
-    border-bottom: 6px solid #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     font-weight: 200;
