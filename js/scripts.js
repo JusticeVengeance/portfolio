@@ -29,23 +29,23 @@ $document.scroll(function() {
 // 	 cycleThru();
 
 		  //For Firefox users
-	 // $('body').bind('DOMMouseScroll', function(e){
-	 //     if(e.originalEvent.detail > 0) {
-	 //         //scroll down
-	 //         console.log('Down');
-	 //         //hide my logo on scroll down
-	 //         $( "#lion" ).fadeOut(100);
-	 //         $( "#name" ).fadeIn(100);
-	 //     }else {
-	 //         //scroll up
-	 //         console.log('Up');
-	 //         $( "#name" ).fadeOut(100);
-	 //         $( "#lion" ).fadeIn(100);
-	 //     }
+	 $('body').bind('DOMMouseScroll', function(e){
+	     if(e.originalEvent.detail > 0) {
+	         //scroll down
+	         console.log('Down');
+	         //hide my logo on scroll down
+	         $( "#lion" ).fadeOut(100);
+	         $( "#name" ).fadeIn(100);
+	     }else if(e.originalEvent.detail < 0) {
+	         //scroll up
+	         console.log('Up');
+	         $( "#name" ).fadeOut(100);
+	         $( "#lion" ).fadeIn(100);
+	     }
 
-	 //     //prevent page fom scrolling
-	 //     return true;
-	 // });
+	     //prevent page fom scrolling
+	     return true;
+	 });
 
 	 // For IE, Opera, Safari, and Chrome users
 	 $('body').bind('mousewheel', function(e){
@@ -58,7 +58,7 @@ $document.scroll(function() {
 			    // if selector matches multiple elements it will be called once for each
 			    $( "#name" ).fadeIn('fast');
 			});
-	     }else {
+	     }else if(e.originalEvent.wheelDelta > 0) {
 	         //scroll up
 	         console.log('Up');
 	         //hide my logo on scroll down
@@ -72,4 +72,44 @@ $document.scroll(function() {
 	     //prevent page fom scrolling
 	     return true;
 	 });
+  var percentage1 = $('.flav1').attr('data-value');
+  var percentage2 = $('.flav2').attr('data-value');
+  var percentage3 = $('.flav3').attr('data-value');
+	var chart = new CanvasJS.Chart("flavorChart", {
+    animationEnabled: true,     
+		data: [
+		{        
+			type: "doughnut",
+			startAngle: 60,                					
+			showInLegend: false,
+			dataPoints: [
+				{y: percentage1/*, indexLabel: "EXAMPLE TITLE #percent%"*/},
+				{y: percentage2},
+				{y: percentage3}			
+			]
+		}
+		]
+	});
+	chart.render();
+	// on page load...
+    moveProgressBar();
+    // on browser resize...
+    $(window).resize(function() {
+        moveProgressBar();
+    });
+
+    // SIGNATURE PROGRESS
+    function moveProgressBar() {
+      console.log("moveProgressBar");
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 5);
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        var animationLength = 1700;
+        
+        // on page load, animate percentage bar to data percentage length
+        // .stop() used to prevent animation queueing
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
  });

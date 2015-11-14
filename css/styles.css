@@ -5,6 +5,249 @@
       display: none;
     }
 }
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+<!--RESPONSIVE DESIGN-->
+@media screen and (max-width:480px) {
+    .circle_container * {
+      display: none;
+    }
+}
+/*FORTUNE CIRCLE*/
+
+.circle_container h1 {
+  color: #d2d2d2;
+  font-size: 8em;
+  line-height:1.2em;
+  text-align: center;
+}
+.line2 h2 {
+  color: #d2d2d2;
+  font-size: 2.02em;
+  line-height:.5em;
+  text-align: center;
+}
+.line3 h2 {
+  color: #d2d2d2;
+  font-size: 1.6em;
+  line-height:0em;
+  text-align: center;
+}
+.circle_container ul {
+    list-style-type:none;
+    padding:0;
+}
+.circle_container {
+  display:block; 
+  height: 200px;
+  left:25%;
+  margin: 0 auto;
+  min-width:48px;
+  position:absolute; 
+  right:25%;
+  top:60px;
+  width:22%;
+  z-index:5;
+}
+.circle_container * {
+  margin: 0px auto;
+}
+.circle {
+  border-radius: 50%;
+  background: #d2d2d2;
+  float:none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  /* width and height can be anything, as long as they're equal */
+}
+.fortune_circle {
+  border-radius: 50%;
+  background: #d2d2d2;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  /* width and height can be anything, as long as they're equal */
+}
+.circle img {
+  padding:10%;
+  width: 80%;
+}
+.fill .fortune_circle {
+    padding: 11px;
+    text-align:center;
+    background: #d2d2d2;
+    border-radius: 50%;
+    /* Old browsers */
+    background: linear-gradient(to top, #d2d2d2 50%, #ff782c 50%);
+    background-size: 400% 200%;
+    background-position:bottom right;
+    top:80px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+@keyframes bounce-background {
+    from {
+        background-position: top;
+    }
+    50% {
+        background-position: bottom;
+    }
+    to {
+        background-position: top;
+    }
+}
+.fill .fortune_circle {
+    animation-name: bounce-background;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    /* For Chrome & Safari */
+   -webkit-animation-name: bounce-background;
+   -webkit-animation-timing-function:ease-in-out;
+   -webkit-animation-duration:2s;
+   -webkit-animation-iteration-count:infinite;
+}
+.fill .fortune_circle img {
+  width: 210%;
+  top: 0;
+  left: 0;
+  margin: -20px;
+  position: relative;  
+}
+.fill #top_logo {
+    padding: 11px;
+    text-align:center;
+    background: #d2d2d2;
+    border-radius: 50%;
+    /* Old browsers */
+    background: linear-gradient(to bottom, #d2d2d2 50%, #ff782c 50%);
+    background-size: 400% 200%;
+    background-position:top left;
+    top:80px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+  .fill .fortune_circle:hover {
+    background-position:top left;
+    top: 0;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+  .fill #top_logo:hover {
+    background-position:bottom right;
+    top: 0;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+.down {
+  height: 60px;
+  list-style: none;
+  margin: 0px auto;
+  padding-top:60px;
+  width: 60px;
+}
+#fftb {
+  bottom: 0;
+  float: right;
+  height:160px;
+  margin: 0 10px 10px 0;
+  padding: 0px;
+  position: fixed;
+  right: 0;
+  width:93px;
+}
+#fftb h1:nth-child(1) {
+  margin: 0 0 -0.3em 0;
+  font-size:2em;
+}
+#fftb h1:nth-child(2) {
+  margin:0 1em 0 1em;
+  float: left;
+  font-size:.95em;
+}
+#fftb h1:nth-child(3) {
+  margin:0;
+  float:left;
+  font-size:.7em;
+}
+#fftb h1:nth-child(4) {
+  margin:-32px 0 0 0;
+  font-size:3.5em;
+  float:left;
+}
+#text_container {
+  width: 100%;
+}
+.top_image {
+  width:100%;
+}
+#top_logo {
+  height: 100px;
+  margin: 25px 0px 0 88px;
+  width: 100px;
+}
+/*RATING SYSTEM*/
+.ratingwrap {
+  margin: 40px 15px 0 15px;
+}
+.ratingwrap .progress {
+  width: 220px;
+  height: 50px;
+}
+.ratingwrap .progress-wrap {
+  background: #323232;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+.ratingwrap .progress-wrap .progress-bar {
+  background: white;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.ratingwrap .green {
+  background: #3dd861;
+}
+.ratingwrap .yellow {
+  background: #fcd31c;
+}
+.ratingwrap .red {
+  background: #f7253e;
+}
+
+.budbox {
+  width: 250px;
+  padding: 0;
+  margin-top: -80px;
+  position: absolute;
+  z-index: 5;
+}
+
+
 /*END RESPONSIVE DESIGN*/
 #about {
   background-color: white;
@@ -38,6 +281,9 @@ body {
   z-index: -4;
 }
 /*BEGIN PAGE STYLING*/
+.comps li {
+  list-style: none;
+}
 #contact {
   background-color: #333333;
   clear: both; 
@@ -333,7 +579,7 @@ figure#fortune_circle {
   white-space: nowrap;
   width: 5%;
 }
-#goodstuff .comps img {
+#goodstuff .comps .deviine {
   float: left;
   margin-left: 6.75%;
   margin-top: 50px;
@@ -582,7 +828,7 @@ h1, h2 {
 .project_section .sub-section {
     position: relative;
 }
-.project_section .alt_heading.abs {
+.project_section .alt_heading.absolute {
     position: absolute;
     left: 0;
     top: 50vh;
@@ -719,7 +965,7 @@ h1, h2 {
 .slide_section .client_projects {
   background: #000;
 }
-.slide_section .slide_heading.absolute {
+.slide_section .slide_heading.absoluteolute {
   position: absolute;
   top: 0;
   left: 0;

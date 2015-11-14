@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.4.1/canvas.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
     <!--[if lt IE 9]>
