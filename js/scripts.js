@@ -1,3 +1,11 @@
+//THIS IS MY SCRIPTS.JS
+
+//THIS IS A MODULE
+// @todo create an angular module that launches a whoAreYou modal. 
+// @todo create an angular module that accepts the user's name and adds it to firebase.
+// @todo create an angular module that gets user's location.
+// @todo create an angular module that conisders the user's location and selects the nearest agency.
+// @todo create an angular module that asks for the user to confirm their agency.
 var $document = $(document),
     $element = $('#header'),
     className = 'hide-bg';
