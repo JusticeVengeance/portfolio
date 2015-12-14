@@ -1,18 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-/*RESPONSIVE DESIGN*/
-@media screen and (max-width:480px) {
-    .project_intro {
-      display: none;
-    }
-}
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-  .project_intro {
-    height: 375px;
-  }
-}
-/*END RESPONSIVE DESIGN*/
 .absolute-center {
   margin: auto;
   position: absolute !important;
@@ -1103,3 +1089,17 @@ ul#line3 li {
 .banners img:nth-child(3) {
   width: 80%;
 }
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width:480px) {
+    .project_intro {
+      display: none;
+    }
+}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+  .project_intro {
+    height: 100vh;
+  }
+}
+/*END RESPONSIVE DESIGN*/
