@@ -5,6 +5,13 @@
       display: none;
     }
 }
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+  .project_intro {
+    height: 375px;
+  }
+}
 /*END RESPONSIVE DESIGN*/
 .absolute-center {
   margin: auto;
@@ -1072,7 +1079,7 @@ ul#line3 li {
 
 /*ADDED AT EXTREMEDY MODIFICATION*/
 .banners {
-  border-top: 25px solid #alskdf;
+  border-top: 25px solid #fff;
   height: auto;
   margin-top: 300px;
   width: 100%;
