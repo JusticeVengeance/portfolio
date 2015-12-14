@@ -10,11 +10,11 @@ var $document = $(document),
     $element = $('#header'),
     className = 'hide-bg';
 
-$(document).ready(function() {
-    $(".divider").animate({width: "+=50%"}, 2000);
-    $(".divider").animate({width: "-=50%"}, 2000);
-setTimeout(arguments.callee, 1000);
-});
+// $(document).ready(function() {
+//     $(".divider").animate({width: "+=50%"}, 2000);
+//     $(".divider").animate({width: "-=50%"}, 2000);
+// setTimeout(arguments.callee, 1000);
+// });
 
 $document.scroll(function() {
 //   $element.toggleClass(className, $document.scrollTop() >= 50);

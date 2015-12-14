@@ -1,14 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 /*RESPONSIVE DESIGN*/
 @media screen and (max-width:480px) {
-    .circle_container * {
-      display: none;
-    }
-}
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-<!--RESPONSIVE DESIGN-->
-@media screen and (max-width:480px) {
-    .circle_container * {
+    .project_intro {
       display: none;
     }
 }
