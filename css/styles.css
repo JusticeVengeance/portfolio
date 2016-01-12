@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @media (max-width: 375px) {
-  #logo, #about_me, .alt_heading {
+  #logo, #about_me, .alt_heading, .project_intro, .line-container {
     display: none;
   }
 }
