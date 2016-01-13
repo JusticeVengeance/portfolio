@@ -466,7 +466,7 @@ h1 {
   border-bottom: 25px solid #333333;
   content: " ";
   height: 80vh;
-  left: -25px;
+  left: -10px;
   margin-top: -40px;
   max-width: 600px;
   min-width: 200px;
@@ -1096,20 +1096,12 @@ ul#line3 li {
       display: none;
     }
 }
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-  .project_intro {
-    height: 100vh;
-  }
-}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #logo, .project_intro, .line-container, #work {
     display: none;
   }
-  #contact h1 {
+  h1 {
     font-size: 3em;
-    font-color
   }
 }
 /*END RESPONSIVE DESIGN*/
