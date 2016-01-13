@@ -3,7 +3,7 @@
   #logo, .project_intro, .line-container, #work {
     display: none;
   }
-  h1 {
+  #contact h1 {
     font-size: 3em;
   }
 }
