@@ -4,17 +4,14 @@
 <html lang="en" ng-app="justinVinge">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Firebase related scripts linked below -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.4.1/canvas.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <style>
         .navbar { border-radius:0; }
     </style>
@@ -31,7 +28,74 @@
 
 
     <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-    <div ui-view></div>
+    <div class="col-md-12 ng-scope" id="header">
+  <a href="index.html">  
+    <div class="col-md-1" id="logo">
+      <div id="lion"><img class="top_left" src="img/logo5.png"/></div>
+      <div id="name"><h2 class="top_left">JUSTIN<br>VINGE<br>DESIGN</h2></div>
+    </div><!--END LOGO DIV-->
+  </a>
+</div>
+<section class="project_intro">  
+  <h1 class="absolute-center col-md-12">PRIDE IN ONE'S WORK</br>IS THE CAT'S MEOW</h1>
+  <div class="line_container"><!--BEGIN CIRCLE CONTAINER--></div>
+</section> <!--END DIV CLASS PROJECT_INTRO-->
+<section class="project_section work" id="work">  
+  <h1 class="absolute-center col-md-4" id="about_me">MYWORK</h1>
+  <div class="sub-section projects">
+    <div class="alt_heading absolute" style="opacity: 1;">
+      <span>
+        <p>I share a quality with most, in that we all seek individuality, this is a trait which inspires uniqueness. I tend to take hold of this drive in developing the most appealing, creative, and visually-stunning product that I can.</p>
+      </span>
+    </div> <!--END DIV CLASS ALTERNATIVE HEADING-->
+    <div class="project enter-page">
+    </div> <!--END DIV CLASS PROJECT ENTER-PAGE-->
+    <div class="project extremedy">
+      <div class="project_container">
+        <a ui-sref="extremedy" class="project-copy" style="opacity: 1; top: 0px;">
+          <span><h1>ATD Movement</h1></span>
+          <div class="divider"></div>
+          <span class="services"><p>Digital & Graphic Event Promotion</p></span>
+        </a>
+      </div>
+    </div> <!--END DIV CLASS PROJECT EXTREMEDY-->
+    <div class="project spokefest">
+      <div class="project_container">
+        <a href="pages/spokefest.html" class="project-copy" style="opacity: 1; top: 0px;">
+          <span><h1>Spokefest</h1></span>
+          <div style="position:relative">
+            <div class="divider"></div>
+          </div>              
+          <span class="services"><p>Social Media Campaign</p></span>
+        </a>
+      </div>
+    </div> <!--END DIV CLASS PROJECT SPOKEFEST-->
+    <div class="project ref5esh">
+      <div class="project_container">
+        <a href="pages/ref5esh.html" class="project-copy" style="opacity: 1; top: 0px;">
+          <span><h1>ref5esh</h1></span>
+          <div style="position:relative">
+            <div class="divider"></div>
+          </div>
+          <span class="services"><p>Industrial & Print Design</p></span>
+        </a>
+      </div> <!--END DIV CLASS PROJECT_CONTAINER-->
+    </div> <!--END DIV CLASS PROJECT REFRESH-->
+  </div>
+</section><!--END PROJECT SECTION-->      
+<div class="section" id="goodstuff">
+  <h1>Web Design</h1>
+  <div class="comps">
+    <img class="deviine" src="img/deviine-zoom.jpg">
+    <img class="deviine" src="img/deviine-comp.png">
+    <img class="deviine" src="img/deviine-rate.jpg">
+    <a target="_blank" href="http://deviine.com/beta"><h2>DeViine</h2></a> 
+  </div><!--END DIV CLASS COMPS-->
+</div><!--END DIV ID GOODSTUFF-->     
+<div class="section" id="contact">
+  <h1>Justin Vinge Design</h1>
+  <a href="jv@justinvinge.com"><h1>jv@justinvinge.com</h1></a>
+</div> <!--END DIV ID CONTACT-->
 
 </body>
 </html>
