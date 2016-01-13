@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 @media (max-width: 375px) {
-  #logo, #about_me, .alt_heading, .project_intro, .line-container {
+  #logo, .project_intro, .line-container, #work {
     display: none;
   }
 }
@@ -15,8 +15,10 @@
 #about_me {
   color: #333333;
   font-size: 7em;
+  line-height: 1;
   margin: 0 auto;
   padding-top: 10px;
+  text-align: center;
   z-index: 1;
 }
 .ads img:first-child {
@@ -594,7 +596,7 @@ h1 {
     padding-top: 10vh;
     margin-top: -1px;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     z-index: 2;
 }
 .project_intro h1 {
