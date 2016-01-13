@@ -1,12 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #logo, .project_intro, .line-container, #work {
-    display: none;
-  }
-  #contact h1 {
-    font-size: 3em;
-  }
-}
 .absolute-center {
   margin: auto;
   position: absolute !important;
@@ -1109,6 +1101,15 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) { 
   .project_intro {
     height: 100vh;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #logo, .project_intro, .line-container, #work {
+    display: none;
+  }
+  #contact h1 {
+    font-size: 3em;
+    font-color
   }
 }
 /*END RESPONSIVE DESIGN*/
