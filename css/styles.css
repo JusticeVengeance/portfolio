@@ -1,7 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
   #logo, .project_intro, .line-container, #work {
     display: none;
+  }
+  h1 {
+    font-size: 9em;
   }
 }
 .absolute-center {
