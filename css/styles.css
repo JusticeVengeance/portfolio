@@ -1091,17 +1091,23 @@ ul#line3 li {
   width: 80%;
 }
 /*RESPONSIVE DESIGN*/
-@media screen and (max-width:480px) {
-    .project_intro {
-      display: none;
-    }
+@media only screen and (min-device-width: 480px) {
+  #mobile-stash {
+    display: none;
+  }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #logo, .project_intro, .line-container, #work {
+  #logo, .project_intro, .line-container, #work, .comps {
     display: none;
   }
   #contact h1, #contact a h1 {
     font-size: 3em;
+  }
+  #goodstuff {
+    background-color: #333333;
+  }
+  #goodstuff img {
+    width: 100%;
   }
 }
 /*END RESPONSIVE DESIGN*/
