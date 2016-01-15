@@ -1092,7 +1092,7 @@ ul#line3 li {
 }
 /*RESPONSIVE DESIGN*/
 @media only screen and (min-device-width: 480px) {
-  #mobile-stash {
+  #mobile-stash, .profile {
     display: none;
   }
 }
@@ -1108,6 +1108,24 @@ ul#line3 li {
   }
   #goodstuff img {
     width: 100%;
+  }
+  #profile img {
+    border-radius: 50%;
+  }
+  #profile .photo {
+    float: left;
+    width: 60%;
+  }
+  #profile .logo {
+    float: right;
+    background-size: 100%;
+    width: 30%;
+  }
+  #profile p {
+    clear: both;
+    float: left;
+    font-size: 1em;
+    color: #FC9115;
   }
 }
 /*END RESPONSIVE DESIGN*/
