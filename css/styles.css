@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 .absolute-center {
   margin: auto;
-  position: absolute !important;
+  position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 #about {
   background-color: white;
 }
-#about_me {
+#about-me {
   color: #333333;
   font-size: 7em;
   line-height: 1;
@@ -37,7 +37,7 @@ body {
   z-index: -4;
 }
 /****FORTUNE CIRCLE****/
-/*.circle_container h1 {
+/*.circle-container h1 {
   color: #d2d2d2;
   font-size: 8em;
   line-height:1.2em;
@@ -126,7 +126,7 @@ body {
   font-size:3.5em;
   float:left;
 }
-figure#fortune_circle {
+figure#fortune-circle {
 	border-radius: 50%;
   background: rgb(155, 155, 155);
   margin: 0 auto;
@@ -134,7 +134,7 @@ figure#fortune_circle {
 	height: 50%;
 	/* width and height can be anything, as long as they're equal */
 }
-.fill figure#fortune_circle {
+.fill figure#fortune-circle {
     padding: 11px;
     text-align:center;
     background: #fff;
@@ -160,7 +160,7 @@ figure#fortune_circle {
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
-.fill #top_logo {
+.fill #top-logo {
     padding: 21px;
     text-align:center;
     border-radius: 50%;
@@ -179,7 +179,7 @@ figure#fortune_circle {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-  .fill figure#fortune_circle:hover {
+  .fill figure#fortune-circle:hover {
     background-position:top left;
     top: 0;
     -webkit-animation: none;
@@ -197,7 +197,7 @@ figure#fortune_circle {
     -o-animation: none;
     animation: none;
 }
-  .fill #top_logo:hover {
+  .fill #top-logo:hover {
     background-position:bottom right;
     top: 0;
     -webkit-animation: none;
@@ -206,7 +206,7 @@ figure#fortune_circle {
     -o-animation: none;
     animation: none;
 }
-.fortune_circle {
+.fortune-circle {
   border-radius: 50%;
   background: #d2d2d2;
   margin: 0 auto;
@@ -217,7 +217,7 @@ figure#fortune_circle {
 .circle img {
   padding:10%;
 }
-.fill .fortune_circle {
+.fill .fortune-circle {
     padding: 11px;
     text-align:center;
     background: #d2d2d2;
@@ -237,7 +237,7 @@ figure#fortune_circle {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-.fill #top_logo {
+.fill #top-logo {
     padding: 11px;
     text-align:center;
     background: #d2d2d2;
@@ -257,7 +257,7 @@ figure#fortune_circle {
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-  .fill .fortune_circle:hover {
+  .fill .fortune-circle:hover {
     background-position:top left;
     top: 0;
     -webkit-animation: none;
@@ -266,7 +266,7 @@ figure#fortune_circle {
     -o-animation: none;
     animation: none;
 }
-  .fill #top_logo:hover {
+  .fill #top-logo:hover {
     background-position:bottom right;
     top: 0;
     -webkit-animation: none;
@@ -320,7 +320,7 @@ figure#fortune_circle {
   float:left;
   z-index: 2;
 }
-figure#fortune_circle {
+figure#fortune-circle {
   position: relative;
   z-index: 2;
   -webkit-animation-name: bounce;
@@ -331,7 +331,7 @@ figure#fortune_circle {
   -webkit-animation-timing-function: ease-in-out;
 
 }
-#footer_nav {
+#footer-nav {
   border-top: 3px solid #fff;
   margin-top:60vh;
   height: 30px;
@@ -445,7 +445,7 @@ h1 {
   font-size: 8em;
   font-weight: 700 !important;
 }
-.line_container {
+.line-container {
   border-right: 4px solid #FC9115;
   border-top: 4px solid #FC9115;
   float: none !important;
@@ -456,10 +456,10 @@ h1 {
   width: 25%;
   z-index: -1;
 }
-.line_container * {
+.line-container * {
   margin: 0px auto;
 }
-.line_container:before {
+.line-container:before {
   border-right: 25px solid #333333;
   border-left: 25px solid #333333;
   border-top: 25px solid #333333;
@@ -474,7 +474,7 @@ h1 {
   width: 100%;
   z-index: -1;
 }
-.line_container ul {
+.line-container ul {
     list-style-type:none;
     padding:0;
 }
@@ -504,7 +504,7 @@ h1 {
   width: 75%;
 }
 /*#lion:after {
-  background-image:url('../img/border_mane_wht.png');
+  background-image:url('../img/border-mane-wht.png');
   background-repeat: no-repeat;
   background-size: 100%;
   content:" ";
@@ -550,12 +550,12 @@ h1 {
   margin: 30px 30px 0 0;
   width: 100px;
 }
-#menu_icon {
+#menu-icon {
   margin: -40px 0px 0px 2px;
   font-size: 5em;
   line-height: 19px;
 }
-#menu_text {
+#menu-text {
   margin: 0;
   font-size: 5em;
   line-height: 24px;
@@ -573,18 +573,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#plains {
-    background: url("../img/spokane_blkwht.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding: 1em;
-    margin: 0;
-
-  /*margin-top: 6.5em;*/
-}
-
-.project_intro {
+.project-intro {
     background-image: url("../img/spokane_blkwht.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -594,7 +583,7 @@ h1 {
     height: 90vh;
     z-index: 2;
 }
-.project_intro h1 {
+.project-intro h1 {
     color: #fff;
     font-size: 9vw;
     line-height: 1em;
@@ -604,8 +593,8 @@ h1 {
     white-space: nowrap;
     z-index: 1;
 }
-.project_intro:after {
-  background-image: url('../img/4px_border_mane_white.png');
+.project-intro:after {
+  background-image: url('../img/4px-border-mane-white.png');
   background-repeat: no-repeat;
   background-size: 100%;
   bottom: 0;
@@ -621,32 +610,32 @@ h1 {
   width: 25%;
   z-index: 2;
 }
-.project_section.work {
+.project-section.work {
     background: #000;
 }
-.project_section {
+.project-section {
     width: 100%;
     height: auto;
     overflow: hidden;
     min-height: 100vh;
     position: relative;
 }
-.project_section.work .projects {
+.project-section.work .projects {
     width: 100%;
     height: auto;
     overflow: hidden;
 }
-.project_section .sub-section {
+.project-section .sub-section {
     position: relative;
 }
-.project_section .alt_heading.absolute {
+.project-section .alt-heading.absolute {
     position: absolute;
     left: 0;
     top: 50vh;
     margin: 0;
     width: 30%;
 }
-.project_section .alt_heading {
+.project-section .alt-heading {
     color: #333333;
     padding-left: 20px;
     border-left: 50px solid #333333;
@@ -659,7 +648,7 @@ h1 {
     margin: 60px 0 20px 0;
     line-height: 1.2;
 }
-.project_section.work .projects .project {
+.project-section.work .projects .project {
     display: table;
     width: 100%;
     height: 100vh;
@@ -671,30 +660,30 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.project_section.work .projects .project.enter-page {
+.project-section.work .projects .project.enter-page {
     background: #fff;
     background-position: top center;
     border-top: 8px solid #333333;
 }
-.project_section.work .projects .project.extremedy {
+.project-section.work .projects .project.extremedy {
     background-image: url('../img/atd.JPG');  
     background-position: center center;
 }
-.project_section.work .projects .project.spokefest {
+.project-section.work .projects .project.spokefest {
     background-image: url('../img/s2.jpg');
     background-position: top center;
 }
-.project_section.work .projects .project.ref5esh {
+.project-section.work .projects .project.ref5esh {
     background-image: url('../img/FrontSide2.jpg');
     background-position: top center;
 }
-.project_section.work .projects .project .project_container {
+.project-section.work .projects .project .project-container {
     display: table-cell;
     vertical-align: middle;
     padding-left: 0;
     padding-right: 0;
 }
-.project_container {
+.project-container {
     width: 100%;
     height: auto;
     max-width: 1000px;
@@ -702,7 +691,7 @@ h1 {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.project_section.work .projects .project .project-copy {
+.project-section.work .projects .project .project-copy {
     display: block;
     width: 100%;
     margin-left: 100px;
@@ -716,7 +705,7 @@ h1 {
     text-decoration: none;
     top: 120px;
 }
-.project_section.work .projects .project .project-copy h1 {
+.project-section.work .projects .project .project-copy h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 3em;
     font-weight: 200;
@@ -725,7 +714,7 @@ h1 {
     margin: 0 0 10px 0;
     white-space: nowrap;
 }
-.project_section.work .projects .project .project-copy p {
+.project-section.work .projects .project .project-copy p {
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
     font-size: 1.2em;
@@ -733,7 +722,7 @@ h1 {
     line-height: 1.5;
     margin-top: 18px;
 }
-.project_section.work .projects .project .project-copy .services {
+.project-section.work .projects .project .project-copy .services {
     font-family: 'Oswald', sans-serifi, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -799,24 +788,24 @@ h1 {
   background-image: url("../img/s.jpg");
   background-position: top center;
 }
-.slide_section {
+.slide-section {
   width: 100%;
   height: auto;
   overflow: hidden;
   min-height: 100vh;
   position: relative;
 }
-.slide_section .client_projects {
+.slide-section .client-projects {
   background: #000;
 }
-.slide_section .slide_heading.absoluteolute {
+.slide-section .slide-heading.absoluteolute {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 3;
   padding: 80px 0 0 60px;
 }
-.slide_section .slide_heading.white {
+.slide-section .slide-heading.white {
   color: #FFF;
 }*/
 /*.title {
@@ -923,7 +912,7 @@ ul#line3 li {
 }
 
 #challenge-f5 {
-  background-image: url('../img/table_background.jpg');
+  background-image: url('../img/table-background.jpg');
 }
 
 .challenge .copy {
@@ -1008,13 +997,13 @@ ul#line3 li {
   padding: 100px 10% 0 10%;
   width: 40%;
 }
-#text_container {
+#text-container {
   width: 100%;
 }
-.top_image {
+.top-image {
   width:100%;
 }
-#top_logo {
+#top-logo {
   height: 100px;
   margin: 25px 0px 0 88px;
   width: 100px;
@@ -1091,23 +1080,48 @@ ul#line3 li {
   width: 80%;
 }
 /*RESPONSIVE DESIGN*/
-@media only screen and (min-device-width: 480px) {
-  #mobile-stash, .profile {
+@media screen and (min-width: 480px) {
+  
+  .mobile-only {
     display: none;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #logo, .project_intro, .line-container, #work, .comps {
+@media screen and (max-device-width : 480px) {
+  #logo, #work, .comps {
+    display: none;
+  }
+  #contact {
     display: none;
   }
   #contact h1, #contact a h1 {
-    font-size: 3em;
+    font-size: 1em;
+    bottom: 0;
   }
   #goodstuff {
-    background-color: #333333;
+    display: none;
   }
   #goodstuff img {
     width: 100%;
+  }
+  #goodstuff h1 {
+    display: none;
+  }
+  .line-container {
+    border-right: 2px solid #FC9115;
+    border-top: 2px solid #FC9115;
+    height: 400px;
+    min-width: 40px;
+  }
+  .line-container:before {
+    border-right: 10px solid #333333;
+    border-left: 10px solid #333333;
+    border-top: 10px solid #333333;
+    border-bottom: 10px solid #333333;
+    height: 200px;
+    left: 50%;
+    margin-left: -50px;
+    min-width: 40px;
+    width: 100px;
   }
   #profile img {
     border-radius: 50%;
@@ -1122,10 +1136,34 @@ ul#line3 li {
     width: 30%;
   }
   #profile p {
-    clear: both;
     float: left;
     font-size: 1em;
     color: #FC9115;
+  }
+  .project-intro {
+    height: 200px;
+    padding-top: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .project-intro h1:nth-child(1) {
+    padding-top: 175px;
+  }
+  .project-intro h1:nth-child(2) {
+    display: none;
+  }
+  .project-intro p {
+    z-index: 0;
+    position: absolute;
+    padding: 0 25% 0 25%;
+    text-align: left;
+    width: 50%;
+    margin-top: -200px;
+    color: #333333;
   }
 }
 /*END RESPONSIVE DESIGN*/
