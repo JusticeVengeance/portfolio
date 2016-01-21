@@ -1137,6 +1137,9 @@ ul#line3 li {
     font-size: 2.5em;
     top: 650px;
   }
+  .mobile-gd {
+    font-size: 1.5em; 
+  }
   #profile img {
     border-radius: 50%;
   }
