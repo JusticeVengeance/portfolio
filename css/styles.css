@@ -1120,7 +1120,7 @@ ul#line3 li {
     border-right: 25px solid #333333;
     border-left: 25px solid #333333;
     border-top: 25px solid #333333;
-    border-bottom: 15px solid #333333;
+    border-bottom: 25px solid #333333;
     height: 400px;
     left: 50%;
     margin-left: -139px;
@@ -1166,7 +1166,7 @@ ul#line3 li {
     padding-top: 200px;
   }
   .project-intro h1:nth-child(1) {
-    padding-top: 375px;
+    padding-top: 475px;
   }
   .project-intro h1:nth-child(2) {
     display: none;
