@@ -1109,7 +1109,7 @@ ul#line3 li {
   .line-container {
     border-right: 2px solid #FC9115;
     border-top: 2px solid #FC9115;
-    height: 1100px;
+    height: 100vh;
     min-width: 40px;
     z-index: 0;
     position: relative;
