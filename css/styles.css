@@ -1163,9 +1163,10 @@ ul#line3 li {
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 200px;
   }
   .project-intro h1:nth-child(1) {
-    padding-top: 275px;
+    padding-top: 375px;
   }
   .project-intro h1:nth-child(2) {
     display: none;
