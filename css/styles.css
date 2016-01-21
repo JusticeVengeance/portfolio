@@ -1137,8 +1137,9 @@ ul#line3 li {
     font-size: 2.5em;
     top: 650px;
   }
-  .mobile-gd {
-    font-size: 1.5em; 
+  h1.mobile-gd {
+    font-size: 0.5em;
+    text-align: center; 
   }
   #profile img {
     border-radius: 50%;
@@ -1169,6 +1170,7 @@ ul#line3 li {
     padding-top: 200px;
   }
   .project-intro h1:nth-child(1) {
+    font-size: 6em;
     padding-top: 475px;
   }
   .project-intro h1:nth-child(2) {
