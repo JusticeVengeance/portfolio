@@ -1109,8 +1109,6 @@ ul#line3 li {
   .line-container {
     border-right: 2px solid #FC9115;
     border-top: 2px solid #FC9115;
-    border-bottom: 4px solid #FC9115;
-    border-bottom-width: 100%;
     height: 1100px;
     min-width: 40px;
     z-index: 0;
@@ -1138,6 +1136,11 @@ ul#line3 li {
   p.mobile-only {
     font-size: 2.5em;
     top: 650px;
+  }
+  .mobile-gd {
+    border-top: 20px solid  #333333;
+    margin-top: 0;
+    padding-top: 5px;
   }
   h1.mobile-gd {
     font-size: 0.5em;
