@@ -1109,17 +1109,21 @@ ul#line3 li {
   .line-container {
     border-right: 2px solid #FC9115;
     border-top: 2px solid #FC9115;
-    height: 400px;
+    height: 1100px;
     min-width: 40px;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .line-container:before {
-    border-right: 15px solid #333333;
-    border-left: 15px solid #333333;
-    border-top: 15px solid #333333;
+    border-right: 25px solid #333333;
+    border-left: 25px solid #333333;
+    border-top: 25px solid #333333;
     border-bottom: 15px solid #333333;
     height: 400px;
     left: 50%;
-    margin-left: -123px;
+    margin-left: -139px;
     min-width: 40px;
     width: 200px;
   }
@@ -1160,7 +1164,7 @@ ul#line3 li {
     background-size: 100%;
   }
   .project-intro h1:nth-child(1) {
-    padding-top: 175px;
+    padding-top: 275px;
   }
   .project-intro h1:nth-child(2) {
     display: none;
@@ -1171,7 +1175,6 @@ ul#line3 li {
     padding: 0 25% 0 25%;
     text-align: left;
     width: 50%;
-    margin-top: -200px;
     color: #333333;
   }
 }
