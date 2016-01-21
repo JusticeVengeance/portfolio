@@ -1080,7 +1080,7 @@ ul#line3 li {
   width: 80%;
 }
 /*RESPONSIVE DESIGN*/
-@media screen and (min-width: 480px) {
+@media screen and (min-device-width: 480px) {
   
   .mobile-only {
     display: none;
@@ -1123,6 +1123,9 @@ ul#line3 li {
     min-width: 40px;
     width: 100px;
   }
+  .mobile-only {
+    display: block;
+  }
   #profile img {
     border-radius: 50%;
   }
@@ -1141,14 +1144,14 @@ ul#line3 li {
     color: #FC9115;
   }
   .project-intro {
-    height: 200px;
-    padding-top: 8vh;
+    height: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
   }
   .project-intro h1:nth-child(1) {
     padding-top: 175px;
