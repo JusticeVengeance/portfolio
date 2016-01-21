@@ -1113,18 +1113,24 @@ ul#line3 li {
     min-width: 40px;
   }
   .line-container:before {
-    border-right: 10px solid #333333;
-    border-left: 10px solid #333333;
-    border-top: 10px solid #333333;
-    border-bottom: 10px solid #333333;
-    height: 200px;
+    border-right: 15px solid #333333;
+    border-left: 15px solid #333333;
+    border-top: 15px solid #333333;
+    border-bottom: 15px solid #333333;
+    height: 400px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -123px;
     min-width: 40px;
-    width: 100px;
+    width: 200px;
+  }
+  .line-container:after {
+    margin: 0 auto;
   }
   .mobile-only {
     display: block;
+  }
+  .mobile-only:p {
+    font-size: 2.5em;
   }
   #profile img {
     border-radius: 50%;
