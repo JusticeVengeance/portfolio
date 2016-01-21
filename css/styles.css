@@ -1135,6 +1135,7 @@ ul#line3 li {
   }
   p.mobile-only {
     font-size: 2.5em;
+    top: 650px;
   }
   #profile img {
     border-radius: 50%;
