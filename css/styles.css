@@ -88,7 +88,7 @@ body {
 }
 .divider {
   background-color: #FC9115;
-  height: 5px;
+  height: 2px;
 }
 .down {
   height: 60px;
@@ -437,14 +437,6 @@ figure#fortune-circle {
 .hide-bg {
   background: none !important;
 }*/
-h1, h2 {
-  font-family: 'Oswald', sans-serif !important;
-  margin: 0;
-}
-h1 {
-  font-size: 8em;
-  font-weight: 700 !important;
-}
 .line-container {
   border-right: 4px solid #FC9115;
   border-top: 4px solid #FC9115;
@@ -583,15 +575,16 @@ h1 {
     height: 90vh;
     z-index: 2;
 }
-.project-intro h1 {
+.project-intro h1:nth-child(2) {
     color: #fff;
-    font-size: 3em;
+    font-size: 8em;
+    height: 200px;
     line-height: 1em;
     margin: 0px;
     padding-top: 150px;
     text-align: center;
     white-space: nowrap;
-    z-index: 1;
+    z-index: 3;
 }
 .project-intro:after {
   background-image: url('../img/4px-border-mane-white.png');
@@ -611,7 +604,7 @@ h1 {
   z-index: 2;
 }
 .project-section.work {
-    background: #000;
+  background-color: #fc9115;
 }
 .project-section {
     width: 100%;
@@ -668,14 +661,17 @@ h1 {
 .project-section.work .projects .project.extremedy {
     background-image: url('../img/atd.JPG');  
     background-position: center center;
+    opacity: 1;
 }
 .project-section.work .projects .project.spokefest {
     background-image: url('../img/s2.jpg');
     background-position: top center;
+    opacity: 1;
 }
 .project-section.work .projects .project.ref5esh {
     background-image: url('../img/FrontSide2.jpg');
     background-position: top center;
+    opacity: 1;
 }
 .project-section.work .projects .project .project-container {
     display: table-cell;
@@ -706,21 +702,22 @@ h1 {
     top: 120px;
 }
 .project-section.work .projects .project .project-copy h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 3em;
-    font-weight: 200;
-    line-height: 2em;
-    list-style: none;
-    margin: 0 0 10px 0;
+    font-weight: 100;
+    opacity: 1;
     white-space: nowrap;
+    text-align: center;
 }
 .project-section.work .projects .project .project-copy p {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 100;
     font-size: 1.2em;
     letter-spacing: .03em;
-    line-height: 1.5;
-    margin-top: 18px;
+    line-height: 6;
+    opacity: 1;
+    border-top: 2px solid #fc9115;
+    text-align: center;
 }
 .project-section.work .projects .project .project-copy .services {
     font-family: 'Oswald', sans-serifi, Arial, sans-serif;
@@ -909,6 +906,7 @@ ul#line3 li {
 
 #challenge-ext {
   background-image: url('../img/extremedy-background.jpg');
+  opacity: 0.1;
 }
 
 #challenge-f5 {
@@ -1087,7 +1085,7 @@ ul#line3 li {
   }
 }
 @media screen and (max-device-width : 480px) {
-  #logo, #work, .comps {
+  #logo, #work {
     display: none;
   }
   #contact {
@@ -1107,8 +1105,8 @@ ul#line3 li {
     display: none;
   }
   .line-container {
-    border-right: 2px solid #FC9115;
-    border-top: 2px solid #FC9115;
+    border-right: 3px solid #FC9115;
+    border-top: 3px solid #FC9115;
     height: 1100px;
     min-width: 40px;
     z-index: 0;
