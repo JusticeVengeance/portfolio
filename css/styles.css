@@ -7,13 +7,14 @@
 #about {
   background-color: white;
 }
-#about-me {
+#about-me { 
   color: #333333;
   font-size: 7em;
   line-height: 1;
   margin: 0 auto;
   padding-top: 10px;
   text-align: center;
+  width: 40%;
   z-index: 1;
 }
 .ads img:first-child {
@@ -25,6 +26,22 @@
 .ads img:nth-child(2) {
   float: right;
   width: 40%;
+}
+.animated {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 1 !important;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 body { 
   margin:0;
@@ -65,7 +82,6 @@ body {
   background-color: #333333;
   clear: both; 
   float: left;
-  margin-top: 10px;
   position: relative;
   height: auto;
   width: 100%;
@@ -351,19 +367,18 @@ figure#fortune-circle {
 }
 #goodstuff {
   background-color: #fff;
-  border-top: 8px solid #333; 
+  margin-top: 800px;
   position: relative;
-  z-index: 4;
+  z-index: 2;
 }
 #goodstuff a {
   text-decoration: none;
 }
-#goodstuff a h2:hover {
-  color: #FC9115;
+#goodstuff .project h1 {
+  color: #ffffff;
 }
 #goodstuff h1:first-child {
   clear: both;
-  color: #333;
   font-family: 'Oswald', sans-serif;
   font-size: 3em;
   text-align: center;
@@ -372,7 +387,6 @@ figure#fortune-circle {
 }
 #goodstuff h1:nth-child(2) {
   clear: both;
-  color: #fff;
   float: right;
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
@@ -437,6 +451,24 @@ figure#fortune-circle {
 .hide-bg {
   background: none !important;
 }*/
+.icon {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 250px;
+  margin: 600px 0 0 5%;
+  padding: 10px 4px 0 20px;
+  padding-top: 10px;
+  position: relative;
+  width: 246px;
+  float: left;
+  z-index: 4;
+}
+#icons .icon:nth-child(1), #icons .icon:nth-child(4) {
+  margin-top: 560px;
+}
+#icons .icon:nth-child(2), #icons .icon:nth-child(3) {
+  margin-top: 590px;
+}
 .line-container {
   border-right: 4px solid #FC9115;
   border-top: 4px solid #FC9115;
@@ -493,7 +525,7 @@ figure#fortune-circle {
 #lion img {
   float: left;
   /*padding: 1em;*/
-  width: 75%;
+  width: 50%;
 }
 /*#lion:after {
   background-image:url('../img/border-mane-wht.png');
@@ -512,14 +544,13 @@ figure#fortune-circle {
   height: auto;
 }
 #logo {
-  background-color:rgba(252, 145, 21, 0.35);
+  /*background-color:rgba(252, 145, 21, 0.35);*/
   float: left;
-  height: 100px;
-  margin-top: 30px;
+  height: 80px;
   overflow: hidden;
   padding: 1%;
   position: fixed;
-  width: 110px;
+  width: 80px;
   z-index: 3;
 
 }
@@ -553,7 +584,9 @@ figure#fortune-circle {
   line-height: 24px;
 }
 #name {
-  font-size: 1.5em;
+  color: #333333;
+  font-weight: 800;
+  font-size: 2em;
   text-align: left;
   top: 0;
   left: 0;
@@ -604,7 +637,7 @@ figure#fortune-circle {
   z-index: 2;
 }
 .project-section.work {
-  background-color: #fc9115;
+  background-color: #fff;
 }
 .project-section {
     width: 100%;
@@ -624,23 +657,31 @@ figure#fortune-circle {
 .project-section .alt-heading.absolute {
     position: absolute;
     left: 0;
-    top: 50vh;
-    margin: 0;
+    top: 150px;
+    margin-left: 10%;
     width: 30%;
+    z-index: 3;
 }
-.project-section .alt-heading {
+.project-section .alt-heading h1 {
+  color: #FC9115;
+  font-family:'Oswald', sans-serif, Arial, sans-serif; 
+  font-weight: 300;
+  font-size: 3em;
+  text-transform: uppercase;
+
+}
+.project-section .alt-heading p {
     color: #333333;
-    padding-left: 20px;
-    border-left: 50px solid #333333;
-    font-family: 'Oswald', sans-seriflibri, Arial, sans-serif;
+    font-family: 'Oswald', sans-serif, Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    opacity: 0;
-    margin: 60px 0 20px 0;
     line-height: 1.2;
 }
+/*.project-section .alt-heading p:nth-child(3) {
+  color: #15FC1E;
+}*/
 .project-section.work .projects .project {
     display: table;
     width: 100%;
@@ -654,9 +695,19 @@ figure#fortune-circle {
     background-repeat: no-repeat;
 }
 .project-section.work .projects .project.enter-page {
-    background: #fff;
+    background: #E8E8E8;
     background-position: top center;
     border-top: 8px solid #333333;
+    border-bottom: 8px solid #333333;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    height: 800px;
+    left: 50%;
+    margin-left: -1500px;
+    overflow: hidden;
+    width: 3000px;
+    z-index: 2;
+    margin-top: 0;
 }
 .project-section.work .projects .project.extremedy {
     background-image: url('../img/atd.JPG');  
