@@ -498,7 +498,9 @@ figure#fortune-circle {
   padding-left: 2.5%;
   width: 30%;
 }
-
+.full {
+  width: 100%;
+}
 #goodstuff {
   background-color: #FFFFFF;
   float: right;
@@ -546,22 +548,15 @@ figure#fortune-circle {
   float: left;
   list-style: none;
 }
-#goodstuff .comps .quarter {
-  float: left;
-  width: 25%;
-}
-#goodstuff .comps .half {
-  float: left;
-  width: 50%;
-}
-#goodstuff .comps .full {
-  width: 100%;
-}
 #goodstuff.section ul.comps.print li:nth-child(even) .half {
   float: right;
 }
 #goodstuff.section ul.comps.print li:nth-child(odd) .half {
   float: left;
+}
+.half {
+  float: left;
+  width: 50%;
 }
 .heading {
   padding: 5vh 0 0 5%;
@@ -818,6 +813,13 @@ figure#fortune-circle {
   margin: 0;
   font-size: 5em;
   line-height: 24px;
+}
+#mobile-intro-text {
+  bottom: 0;
+  font-size: 0.3em;
+  margin-left: 103%;
+  position: absolute;
+  width: 100%;
 }
 #name {
   color: #333333;
@@ -1077,6 +1079,10 @@ figure#fortune-circle {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+}
+.quarter {
+  float: left;
+  width: 25%;
 }
  #restricted {
   float: right;
