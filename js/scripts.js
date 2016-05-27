@@ -89,6 +89,7 @@ $window.scroll(function() {
   var $toplaunch = $('#top-launch');
   var $navbuttons = $('#nav-buttons');
   var $results = $('#results');
+  var $navtext = $('#nav-text')
 
   // @see http://api.jquery.com/offset/
   if(scroll >= $('#restricted').offset().top) {
@@ -99,6 +100,7 @@ $window.scroll(function() {
     $toplaunch.addClass('top-launch-visible');
     $toplaunch.addClass('top-launch-animate');
     $navbuttons.css("z-index", "6");
+    $navtext.addClass("nav-unclicked");
   } else {
     $image.removeClass('fix-spokane');
     $image.css("transform","translateY(" +  (scroll/2)  + "px)");
@@ -107,6 +109,7 @@ $window.scroll(function() {
     $toplaunch.removeClass('top-launch-animate');
     $toplaunch.removeClass('top-launch-visible');
     $navbuttons.css("z-index", "-3");
+    $navtext.removeClass("nav-unclicked");
   }
 });
     /* If the object is completely visible in the window, fade it in */
