@@ -815,7 +815,7 @@ figure#fortune-circle {
   line-height: 24px;
 }
 #mobile-intro-text {
-  bottom: 0;
+  bottom: 50px;
   font-size: 1.3em;
   margin-left: 90%;
   position: absolute;
@@ -1385,6 +1385,7 @@ ul#line3 li {
     height: 900px;
     min-width: 40px;
     z-index: 0;
+    padding-bottom: 50px;
     position: relative;
     top: 0;
     left: 0;
@@ -1869,7 +1870,6 @@ input:focus, textarea:focus {
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
       border-bottom: 12px solid #333333;
-      height: auto;
     }
 }
 
@@ -1879,7 +1879,9 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-
+    #image {
+      height: 60%;
+    }
 }
 
 /* Landscape */
@@ -1888,7 +1890,9 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-
+    #image {
+      height: 20%;
+    }
 }
 
 /* ----------- iPhone 6+ ----------- */
