@@ -1862,7 +1862,6 @@ input:focus, textarea:focus {
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
       border-bottom: 12px solid #333333;
-      height: 20%;
       opacity: 1;
       position: absolute;
       top: 0;
