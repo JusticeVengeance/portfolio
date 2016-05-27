@@ -816,8 +816,8 @@ figure#fortune-circle {
 }
 #mobile-intro-text {
   bottom: 0;
-  font-size: 0.3em;
-  margin-left: 103%;
+  font-size: 1.3em;
+  margin-left: 90%;
   position: absolute;
   width: 100%;
 }
@@ -1379,7 +1379,6 @@ ul#line3 li {
   .line-container {
     border-right: 3px solid #ff6200;
     border-top: 3px solid #ff6200;
-    border-bottom: 30px solid #ff6200;
     height: 900px;
     min-width: 40px;
     z-index: 0;
