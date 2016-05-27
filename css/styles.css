@@ -1882,6 +1882,9 @@ input:focus, textarea:focus {
     #image {
       height: 60%;
     }
+    #image-container {
+      height: 560px;
+    }
 }
 
 /* Landscape */
