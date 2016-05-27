@@ -1380,15 +1380,7 @@ ul#line3 li {
     display: none;
   }
   .line-container {
-    border-right: 3px solid #ff6200;
-    border-top: 3px solid #ff6200;
-    height: 900px;
-    min-width: 40px;
-    z-index: 0;
-    padding-bottom: 50px;
-    position: relative;
-    top: 0;
-    left: 0;
+    display: none;
   }
   .line-container:before {
     border-right: 25px solid #333333;
