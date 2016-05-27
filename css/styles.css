@@ -1493,6 +1493,7 @@ ul#line3 li {
     display: none;
   }
   #restricted {
+    margin-top: 600px;
     width: 100%;
   }
 }
