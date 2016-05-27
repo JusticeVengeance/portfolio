@@ -1870,6 +1870,14 @@ input:focus, textarea:focus {
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
       border-bottom: 12px solid #333333;
+      height: 20%;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("http://justicevengeance.github.io/portfolio/img/spokane_blkwht.jpg");
+      background-size: cover;
+      width: 100%;
     }
 }
 
