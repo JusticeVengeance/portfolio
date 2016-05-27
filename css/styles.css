@@ -1863,6 +1863,7 @@ input:focus, textarea:focus {
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
       border-bottom: 12px solid #333333;
+      height: 100%;
       opacity: 1;
       position: absolute;
       top: 0;
@@ -1879,11 +1880,8 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-    #image {
-      height: 60%;
-    }
     #image-container {
-      height: 560px;
+      height: 667px;
     }
 }
 
@@ -1893,8 +1891,8 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-    #image {
-      height: 20%;
+    #image-container {
+      height: 375px;
     }
 }
 
