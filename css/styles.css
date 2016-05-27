@@ -1373,6 +1373,9 @@ ul#line3 li {
     font-size: 1em;
     bottom: 0;
   }
+  #goodstuff {
+    margin: 0;
+  }
   #goodstuff h1 {
     display: none;
   }
@@ -1399,6 +1402,17 @@ ul#line3 li {
   }
   .line-container:after {
     margin: 0 auto;
+  }
+  #logo {
+    float: left;
+    padding: 5%;
+    margin-top: 680px;
+    position: absolute;
+    width: 45%;
+    z-index: 3;
+  }
+  #logo-jvd {
+    display: none;
   }
   .mobile-only {
     display: block;
@@ -1467,8 +1481,8 @@ ul#line3 li {
   }
   .project-intro h1:nth-child(1) {
     color: #fff;
-    font-size: 6em;
-    padding-top: 475px;
+    font-size: 5em;
+    padding-top: 360px;
     z-index: 1;
   }
   .project-intro h1:nth-child(2) {
@@ -1854,6 +1868,7 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
+      border-bottom: 12px solid #333333;
       height: auto;
     }
 }
