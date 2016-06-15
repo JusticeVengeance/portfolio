@@ -1424,8 +1424,8 @@ ul#line3 li {
     font-size: 0.5em;
     text-align: center; 
   }
-  .mobile-full-size {
-    width: 100%;
+  .mobile-half-size {
+    width: 50%;
   }
   #nav-butons, #nav {
     display:none;
@@ -1472,6 +1472,9 @@ ul#line3 li {
     background-repeat: no-repeat;
     background-size: 100%;
     padding-top: 200px;
+  }
+  .project-intro:after {
+    display: none;
   }
   .project-intro h1:nth-child(1) {
     color: #fff;
@@ -1691,7 +1694,7 @@ ul#line3 li {
   border:#30aed6 solid 3px;
 }
 
-/* Icons ---------------------------------- */
+/* Icons on the contact form ---------------------------------- */
 #name{
   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
   background-size: 30px 30px;
