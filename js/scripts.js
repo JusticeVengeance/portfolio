@@ -79,9 +79,7 @@
 // });
 
 // Caching jQuery selectors: another micro-optimization / protip.
-// @see https://github.com/airbnb/javascript#25.2
 var $window = $(window);
-//on a scroll event - execute function
 $window.scroll(function() {
   var scroll = $window.scrollTop();
   var $image = $('#image');
@@ -89,7 +87,8 @@ $window.scroll(function() {
   var $toplaunch = $('#top-launch');
   var $navbuttons = $('#nav-buttons');
   var $results = $('#results');
-  var $navtext = $('#nav-text')
+  var $navtext = $('#nav-text');
+  var $restricted = $('#restricted');
 
   // @see http://api.jquery.com/offset/
   if(scroll >= $('#restricted').offset().top) {
@@ -113,9 +112,11 @@ $window.scroll(function() {
   }
 });
     /* If the object is completely visible in the window, fade it in */
+
 $window.scroll(function() { 
-  var $path = $('.lineogo');
-  var bottom_of_object = $path.offset().top + $path.outerHeight();
+  var $lineogo = $('.icon');
+  var $path = $lineogo.offset().top;
+  var bottom_of_object = $path + $lineogo.outerHeight();
   var bottom_of_window = $(window).scrollTop() + $(window).height(); 
   if( bottom_of_window > bottom_of_object ){
     $('.lineogo').attr("class", "start");
@@ -123,14 +124,28 @@ $window.scroll(function() {
   }
 });
 
-$(function () {
-    $(window).scroll(function () {
-        var y = $(window).scrollTop();
-        var r = $('#results').offset().top;
-        $('#results').height(y);
-        x = y - 300;
-        $myDiv.animate({
-            height: x
-        }, 250);
-    }).scroll();
-});
+// $(function () {
+//     $(window).scroll(function () {
+//         var $sideline = $('#sideline');
+//         var $windowsDistanceFromTop = $(window).scrollTop();   //y
+//         var $sidelineDistanceFromTop = $sideline.offset().top; //r
+//         $sidelineDistanceFromTop.height($windowsDistanceFromTop);
+//         var x = $windowsDistanceFromTop - 200;
+//         $sidelineDistanceFromTop.animate({
+//             height: x
+//         }, 250);
+//     }).scroll();
+// });
+
+// $(function () {
+//     $(window).scroll(function () {
+//         var y = $(window).scrollTop();
+//         var r = $('#sideline').offset().top;
+//         var $myDiv = $('#sideline');
+//         $('#sideline').height(y);
+//         x = y - 300;
+//         $myDiv.animate({ //I am to assume that myDiv is supposed to be associated with something other than '#restricted'
+//             height: x
+//         }, 250);
+//     }).scroll();
+// });

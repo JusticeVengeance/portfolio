@@ -395,7 +395,7 @@
     </svg> -->
   </li>
 </ul>
-<div id="results"></div>
+<div id="sideline"></div>
 <div id="nav">
   <div class="e nav-item" id="dropaline">
     <a href=""></a>
@@ -507,27 +507,60 @@
 </div>
 <div id="form-main">
   <div id="form-div">
-    <form method="post" name="contact_form" action="contact-form-handler.php" class="form" id="form1">
-      <!-- <span id='close'>x</span> -->
-      
+
+    <!-- SHOW ERROR/SUCCESS MESSAGES --> 
+    <div id="messages" ng-show="message">{{ message }}</div>
+
+    <!-- FORM --> 
+    <form ng-submit="processForm()"> 
+      <!-- NAME --> 
+      <div id="name-group" class="form-group name" ng-class="{ 'has-error' : errorName }"> 
+        <input id="name" type="text" name="name" class="form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" ng-model="formData.name"> 
+        <span class="help-block" ng-show="errorName">{{ errorName }}</span> 
+      </div>
+
+      <!-- SUPERHERO NAME -->
+      <div id="email-group" class="form-group email" ng-class="{ 'has-error' : errorEmail }"> 
+          <input id="email" type="text" name="email" class="form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" ng-model="formData.email"> 
+          <span class="help-block" ng-show="errorEmail">{{ errorEmail }}</span> 
+      </div>
+
+      <!-- SUPERHERO NAME -->
+      <div id="comments-group" class="form-group comments" ng-class="{ 'has-error' : errorComments }"> 
+          <input id="comments" type="text" name="comments" class="form-control validate[required,custom[onlyLetter],length[6,300]] feedback-input" placeholder="Comments" ng-model="formData.comments"> 
+          <span class="help-block" ng-show="errorComments">{{ errorComments }}</span> 
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <button id="button-blue" type="submit" class="btn btn-success btn-lg btn-block">
+          <span class="glyphicon glyphicon-flash"></span> Submit!
+      </button>
+      <div class="ease"></div>
+    </form>
+
+      <!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
+    <pre>
+        {{ formData }}
+    </pre>
+
+    <!-- <form action="php/process.php" method="post" id="form1">    
       <p class="name">
-        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name">
       </p>
       
       <p class="email">
-        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email">
       </p>
       
       <p class="text">
-        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+        <textarea name="comments" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
       </p>
-      
-      
+
       <div class="submit">
-        <input type="submit" value="Submit" id="button-blue"/>
+        <input type="submit" value="Submit" id="button-blue">
         <div class="ease"></div>
       </div>
-    </form>
+    </form> -->
   </div>
 </div>
 <div id="top-launch">⬆︎</div>
@@ -592,8 +625,8 @@
          height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
       <g id="Layer_1" display="none">
         
-          <image display="inline" overflow="visible" width="351" height="131" xlink:href="../../../../../../../../Users/justin001vinge/Sites/portfolio/img/4px_border_mane_white.png"  transform="matrix(0.4338 0 0 0.4338 6.1509 117.1709)">
-        </image>
+<!--           <image display="inline" overflow="visible" width="351" height="131" xlink:href="../../../../../../../../Users/justin001vinge/Sites/portfolio/img/4px_border_mane_white.png"  transform="matrix(0.4338 0 0 0.4338 6.1509 117.1709)">
+        </image> -->
       </g>
       <g id="Layer_3" display="none">
         <path class="lineogo" display="inline" fill="none" d="M100,183.5c-3.243,0-6.458-0.197-9.637-0.562l0.316,12.099
@@ -647,8 +680,8 @@
          height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
         <g id="Layer_1" display="none">
         
-          <image display="inline" overflow="visible" width="351" height="131" xlink:href="../../../../../../../../Users/justin001vinge/Sites/portfolio/img/4px_border_mane_white.png"  transform="matrix(0.4338 0 0 0.4338 6.1509 117.1709)">
-        </image>
+<!--           <image display="inline" overflow="visible" width="351" height="131" xlink:href="../../../../../../../../Users/justin001vinge/Sites/portfolio/img/4px_border_mane_white.png"  transform="matrix(0.4338 0 0 0.4338 6.1509 117.1709)">
+        </image> -->
         </g>
         <g id="Layer_3" display="none">
         <path class="lineogo" display="inline" fill="none" d="M100,183.5c-3.243,0-6.458-0.197-9.637-0.562l0.316,12.099
@@ -709,8 +742,8 @@
          height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
       <g id="Layer_1" display="none">
         
-          <image display="inline" overflow="visible" width="351" height="131" xlink:href="../../../../../../../../Users/justin001vinge/Sites/portfolio/img/4px_border_mane_white.png"  transform="matrix(0.4338 0 0 0.4338 6.1509 117.1709)">
-        </image>
+<!--           <image display="inline" overflow="visible" width="351" height="131" xlink:href="../../../../../../../../Users/justin001vinge/Sites/portfolio/img/4px_border_mane_white.png"  transform="matrix(0.4338 0 0 0.4338 6.1509 117.1709)">
+        </image> -->
       </g>
       <g id="Layer_3" display="none">
         <path class="lineogo" display="inline" none="none" d="M100,183.5c-3.243,0-6.458-0.197-9.637-0.562l0.316,12.099
@@ -888,7 +921,7 @@ $('.tile-big').stop().animate({width:"60%"});
   $(".email").click(function(e){
     e.stopPropagation();
   });
-  $(".text").click(function(e){
+  $(".comments").click(function(e){
     e.stopPropagation();
   });
 

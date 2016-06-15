@@ -768,9 +768,7 @@ figure#fortune-circle {
 
 }
 #lion img {
-  float: left;
-  /*padding: 1em;*/
-  width: 85%;
+  width: 100%;
 }
 /*#lion:after {
   background-image:url('../img/border-mane-wht.png');
@@ -917,7 +915,6 @@ figure#fortune-circle {
     z-index: 0;
 }
 .project-intro:after {
-  background-image: url('../img/4px-border-mane-white.png');
   background-repeat: no-repeat;
   background-size: 100%;
   bottom: 0;
@@ -1397,12 +1394,16 @@ ul#line3 li {
     margin: 0 auto;
   }
   #logo {
-    float: left;
-    padding: 5%;
-    margin-top: 680px;
+    padding: 3%;
+    margin: 610px auto;
     position: absolute;
-    width: 45%;
+    width: 30%;
     z-index: 3;
+    background-color: white;
+    border-radius: 50%;
+    height: auto;
+    left: -20%;
+    margin-left: 50%;
   }
   #logo-jvd {
     display: none;
@@ -1720,7 +1721,7 @@ ul#line3 li {
   background-repeat: no-repeat;
 }
 
-#comment{
+#comments{
   background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
