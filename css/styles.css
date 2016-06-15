@@ -1395,15 +1395,11 @@ ul#line3 li {
   }
   #logo {
     padding: 3%;
-    margin: 610px auto;
+    margin: 10px auto;
     position: absolute;
-    width: 30%;
+    width: 93%;
     z-index: 3;
-    background-color: white;
-    border-radius: 50%;
     height: auto;
-    left: -20%;
-    margin-left: 50%;
   }
   #logo-jvd {
     display: none;
@@ -1479,7 +1475,10 @@ ul#line3 li {
   .project-intro h1:nth-child(1) {
     color: #fff;
     font-size: 5em;
-    padding-top: 360px;
+    line-height: 1em;
+    margin-left: 5%;
+    padding-top: 1000px;
+    text-align: left;
     z-index: 1;
   }
   .project-intro h1:nth-child(2) {
@@ -1867,7 +1866,7 @@ input:focus, textarea:focus {
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
       border-bottom: 12px solid #333333;
-      height: 100%;
+      height: 1500px;
       opacity: 1;
       position: absolute;
       top: 0;
