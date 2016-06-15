@@ -1484,6 +1484,18 @@ ul#line3 li {
   .project-intro h1:nth-child(2) {
     display: none;
   }
+  .project-intro p:nth-child(1) {
+    font-size: .2em;
+  }
+  .project-intro p:nth-child(2) {
+    font-size: .4em;
+  }
+  .project-intro p:nth-child(3) {
+    font-size: .4em;
+  }
+  .project-intro p:nth-child(4) {
+    font-size: .3em;
+  }
   .project-intro p {
     z-index: 0;
     position: absolute;
