@@ -1480,9 +1480,11 @@ ul#line3 li {
   }
   .project-intro h1:nth-child(4) {
     text-align: left;
+    color: #ffffff;
+    font-size: 1em;
     padding-left: 5%;
     line-height: 1em;
-    margin-top: 100px;
+    margin: 95px 0 95px 0;
   }
   .project-intro h1:nth-child(8) {
     display: none;
@@ -1492,12 +1494,12 @@ ul#line3 li {
     margin-top: 90px;
   }
   .project-intro p:nth-child(2) {
-    font-size: .2em;
+    font-size: .3em;
     margin: 100px 0 0 0;
     line-height: .6em
   }
   .project-intro p:nth-child(3) {
-    font-size: .4em;
+    font-size: .3em;
     margin: 0px;
   }
   .project-intro p:nth-child(6) {
@@ -1505,7 +1507,7 @@ ul#line3 li {
     color: #ffffff;
     padding-left: 5%;
     padding-top: 0px;
-    font-size: .15em;
+    font-size: .2em;
     line-height: 1em;
   }
   .project-intro p {
