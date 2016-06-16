@@ -1485,7 +1485,7 @@ ul#line3 li {
     display: none;
   }
   .project-intro p:nth-child(1) {
-    font-size: .2em;
+    font-size: .7em;
   }
   .project-intro p:nth-child(2) {
     font-size: .4em;
@@ -1499,7 +1499,7 @@ ul#line3 li {
   .project-intro p {
     z-index: 0;
     position: absolute;
-    padding: 0 25% 0 25%;
+    padding-left: 5%;
     text-align: left;
     width: 50%;
     color: #333333;
