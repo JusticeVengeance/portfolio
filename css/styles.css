@@ -768,7 +768,6 @@ figure#fortune-circle {
 
 }
 #lion img {
-  width: 100%;
 }
 /*#lion:after {
   background-image:url('../img/border-mane-wht.png');
@@ -1458,7 +1457,6 @@ ul#line3 li {
     background-repeat: no-repeat;
 }
   .project-intro {
-    font-size: 20px;
     height: auto;
     top: 0;
     left: 0;
@@ -1467,7 +1465,6 @@ ul#line3 li {
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 200px;
   }
   .project-intro:after {
     display: none;
@@ -1481,28 +1478,41 @@ ul#line3 li {
     text-align: left;
     z-index: 1;
   }
-  .project-intro h1:nth-child(2) {
+  .project-intro h1:nth-child(4) {
+    text-align: left;
+    padding-left: 5%;
+    line-height: 1em;
+    margin-top: 100px;
+  }
+  .project-intro h1:nth-child(8) {
     display: none;
   }
   .project-intro p:nth-child(1) {
-    font-size: .7em;
+    font-size: .2em;
+    margin-top: 90px;
   }
   .project-intro p:nth-child(2) {
-    font-size: .4em;
+    font-size: .2em;
+    margin: 100px 0 0 0;
+    line-height: .6em
   }
   .project-intro p:nth-child(3) {
     font-size: .4em;
+    margin: 0px;
   }
-  .project-intro p:nth-child(4) {
-    font-size: .3em;
+  .project-intro p:nth-child(6) {
+    float: left;
+    color: #ffffff;
+    padding-left: 5%;
+    padding-top: 0px;
+    font-size: .15em;
+    line-height: 1em;
   }
   .project-intro p {
-    z-index: 0;
-    position: absolute;
-    padding-left: 5%;
+    color: #ffffff;
+    padding: 20px 0 0 5%;
     text-align: left;
-    width: 50%;
-    color: #333333;
+    z-index: 0;
   }
   .project-section.work .projects {
     display: none;
