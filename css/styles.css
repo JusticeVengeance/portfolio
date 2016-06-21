@@ -685,14 +685,8 @@ figure#fortune-circle {
   width: 100%;
   z-index: -1;
 }
-#logo {
-  /*background-color:rgba(252, 145, 21, 0.35);*/
-  float: left;
-  height: 80px;
-  padding: 1%;
-  position: absolute;
-  width: 80px;
-  z-index: 3;
+#logo img {
+  width: 100%; 
 }
 #logo-jvd {
   color: #333333;
@@ -721,7 +715,7 @@ figure#fortune-circle {
   border-right: 4px solid #ff6200;
   border-top: 4px solid #ff6200;
   float: none !important;
-  height: 89vh;
+  height: 81vh;
   margin: 0 auto;
   min-width: 368px;
   perspective: 1px;
@@ -738,7 +732,7 @@ figure#fortune-circle {
   border-top: 25px solid #333333;
   border-bottom: 25px solid #333333;
   content: " ";
-  height: 80vh;
+  height: 70vh;
   left: -10px;
   margin-top: -40px;
   max-width: 600px;
@@ -764,11 +758,6 @@ figure#fortune-circle {
   line-height:0em;
   text-align: center;
 }*/
-#lion {
-
-}
-#lion img {
-}
 /*#lion:after {
   background-image:url('../img/border-mane-wht.png');
   background-repeat: no-repeat;
@@ -793,6 +782,14 @@ figure#fortune-circle {
   float: left;
   overflow: hidden;
 }
+  #logo {
+    height: auto;
+    padding: 3%;
+    margin: 10px auto;
+    position: absolute;
+    width: 8%;
+    z-index: 3;
+  }
 .marker p {
   border-left: 24px solid #333333;
 }
@@ -896,19 +893,18 @@ figure#fortune-circle {
 }
 .project-intro {
     font-size: 100px;
-    padding-top: 10vh;
     margin-top: -1px;
     text-align: center;
     height: 90vh;
     z-index: 2;
 }
-.project-intro h1:nth-child(2) {
+.project-intro h1:nth-child(7) {
     color: #fff;
     font-size: 1.4em;
     height: 200px;
     line-height: 1em;
     margin: 0px;
-    padding-top: 150px;
+    padding-top: 300px;
     text-align: center;
     white-space: nowrap;
     z-index: 0;
@@ -1392,14 +1388,6 @@ ul#line3 li {
   .line-container:after {
     margin: 0 auto;
   }
-  #logo {
-    padding: 3%;
-    margin: 10px auto;
-    position: absolute;
-    width: 93%;
-    z-index: 3;
-    height: auto;
-  }
   #logo-jvd {
     display: none;
   }
@@ -1490,19 +1478,22 @@ ul#line3 li {
     display: none;
   }
   .project-intro p:nth-child(1) {
+    color: #333333;
     font-size: .2em;
-    margin-top: 90px;
+    margin-top: 40px;
   }
   .project-intro p:nth-child(2) {
+    color: #333333;
     font-size: .3em;
     margin: 100px 0 0 0;
     line-height: .6em
   }
   .project-intro p:nth-child(3) {
+    color: #333333;
     font-size: .3em;
     margin: 0px;
   }
-  .project-intro p:nth-child(6) {
+  .project-intro p:nth-child(5) {
     float: left;
     color: #ffffff;
     padding-left: 5%;
@@ -1520,7 +1511,6 @@ ul#line3 li {
     display: none;
   }
   #restricted {
-    margin-top: 600px;
     width: 100%;
   }
 }
