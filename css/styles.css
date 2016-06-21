@@ -1371,6 +1371,10 @@ ul#line3 li {
   #goodstuff h1 {
     display: none;
   }
+  #image {
+    height: 1200px;
+    top: -300px;
+  }
   .line-container {
     display: none;
   }
@@ -1387,6 +1391,9 @@ ul#line3 li {
   }
   .line-container:after {
     margin: 0 auto;
+  }
+  #logo {
+    width: 18%;
   }
   #logo-jvd {
     display: none;
@@ -1410,7 +1417,7 @@ ul#line3 li {
   .mobile-half-size {
     width: 50%;
   }
-  #nav-butons, #nav {
+  #nav-buttons, #nav {
     display:none;
   }
   .pc-only {
@@ -1480,13 +1487,12 @@ ul#line3 li {
   .project-intro p:nth-child(1) {
     color: #333333;
     font-size: .2em;
-    margin-top: 40px;
+    margin-top: 300px;
   }
   .project-intro p:nth-child(2) {
     color: #333333;
     font-size: .3em;
-    margin: 100px 0 0 0;
-    line-height: .6em
+    margin-top: 50px;
   }
   .project-intro p:nth-child(3) {
     color: #333333;
@@ -1496,14 +1502,13 @@ ul#line3 li {
   .project-intro p:nth-child(5) {
     float: left;
     color: #ffffff;
-    padding-left: 5%;
-    padding-top: 0px;
     font-size: .2em;
-    line-height: 1em;
+    padding-top: 50px;
   }
   .project-intro p {
     color: #ffffff;
-    padding: 20px 0 0 5%;
+    line-height: 0.6em;
+    padding-left: 5%;
     text-align: left;
     z-index: 0;
   }
@@ -1897,9 +1902,6 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-    #image-container {
-      height: 667px;
-    }
 }
 
 /* Landscape */
@@ -1908,9 +1910,6 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-    #image-container {
-      height: 375px;
-    }
 }
 
 /* ----------- iPhone 6+ ----------- */
