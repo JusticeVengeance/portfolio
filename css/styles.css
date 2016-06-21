@@ -1372,9 +1372,16 @@ ul#line3 li {
     display: none;
   }
   #image {
-    height: 1000px;
-    top: -300px;
-  }
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/spokane_blkwht.jpg');
+      background-size: cover;
+      border-bottom: 12px solid #333333;
+      height: 1200px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      top: -300px;
+      width: 100%;
+    }
   .line-container {
     display: none;
   }
@@ -1485,25 +1492,25 @@ ul#line3 li {
     display: none;
   }
   .project-intro p:nth-child(1) {
-    font-size: .2em;
+    font-size: .1em;
     margin-top: 300px;
   }
   .project-intro p:nth-child(2) {
-    font-size: .3em;
+    font-size: .2em;
     margin-top: 50px;
   }
   .project-intro p:nth-child(3) {
-    font-size: .3em;
+    font-size: .2em;
     margin: 0px;
   }
   .project-intro p:nth-child(5) {
     float: left;
-    font-size: .2em;
+    font-size: .1em;
     line-height: 1em;
   }
   .project-intro p {
     color: #939292;
-    line-height: 0.6em;
+    line-height: 1em;
     margin: 0;
     padding-left: 5%;
     text-align: left;
