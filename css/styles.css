@@ -1479,29 +1479,27 @@ ul#line3 li {
     font-size: 1em;
     line-height: 1em;
     margin: 35px 0 35px 0;
+    padding-left: 5%;
   }
   .project-intro h1:nth-child(8) {
     display: none;
   }
   .project-intro p:nth-child(1) {
-    color: #333333;
     font-size: .2em;
     margin-top: 300px;
   }
   .project-intro p:nth-child(2) {
-    color: #333333;
     font-size: .3em;
     margin-top: 50px;
   }
   .project-intro p:nth-child(3) {
-    color: #333333;
     font-size: .3em;
     margin: 0px;
   }
   .project-intro p:nth-child(5) {
     float: left;
-    color: #ffffff;
     font-size: .2em;
+    line-height: 1em;
   }
   .project-intro p {
     color: #939292;
