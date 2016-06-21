@@ -1492,20 +1492,22 @@ ul#line3 li {
     display: none;
   }
   .project-intro p:nth-child(1) {
-    font-size: .1em;
+    font-size: .15em;
     margin-top: 300px;
   }
   .project-intro p:nth-child(2) {
     font-size: .2em;
     margin-top: 50px;
+    text-transform: uppercase;
   }
   .project-intro p:nth-child(3) {
     font-size: .2em;
     margin: 0px;
+    text-transform: uppercase;
   }
   .project-intro p:nth-child(5) {
     float: left;
-    font-size: .1em;
+    font-size: .15em;
     line-height: 1em;
   }
   .project-intro p {
@@ -1888,7 +1890,7 @@ input:focus, textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     #image {
-      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/spokane_blkwht.jpg');
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/spokane_blkwht.jpg');
       background-size: cover;
       border-bottom: 12px solid #333333;
       height: 1200px;
