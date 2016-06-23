@@ -1371,7 +1371,12 @@ ul#line3 li {
   #goodstuff {
     margin: 0;
   }
-  #goodstuff h1 {
+  #icons h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding-top: 30px;
+  }
+  .icon {
     display: none;
   }
   #image {
@@ -1382,7 +1387,7 @@ ul#line3 li {
       left: 0;
       opacity: 1;
       position: absolute;
-      top: -300px;
+      top: -450px;
       width: 100%;
     }
   .line-container {
@@ -1526,11 +1531,13 @@ ul#line3 li {
     margin: 0 auto;
     position: relative;
     text-align: center;
+    top: 0;
     width: 80%;
   }
   .project-section .alt-heading.absolute h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600; 
+    line-height: 1.2em;
   }
   .project-section .alt-heading.absolute p {
     font-family: "Times New Roman", Times, serif;
@@ -1867,7 +1874,9 @@ input:focus, textarea:focus {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-
+    #image {
+      top: -550px;
+    }
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
