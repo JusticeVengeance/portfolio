@@ -1365,6 +1365,9 @@ ul#line3 li {
     font-size: 1em;
     bottom: 0;
   }
+  .enter-page {
+    display: none;
+  }
   #goodstuff {
     margin: 0;
   }
@@ -1518,8 +1521,20 @@ ul#line3 li {
     text-align: left;
     z-index: 0;
   }
-  .project-section.work .projects {
-    display: none;
+  .project-section .alt-heading.absolute {
+    font-size: 25px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 80%;
+  }
+  .project-section .alt-heading.absolute h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600; 
+  }
+  .project-section .alt-heading.absolute p {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 200; 
   }
   #restricted {
     width: 100%;
