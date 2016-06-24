@@ -660,7 +660,7 @@ figure#fortune-circle {
   width : 16%;
 }
 #icon-summaries p:nth-child(3) {
-  margin: 70px 2% 0 4%;
+  margin: 57px 2% 0 4%;
   width : 19%;
 }
 #icon-summaries p:nth-child(4) {
@@ -1371,21 +1371,6 @@ ul#line3 li {
   #goodstuff {
     margin: 0;
   }
-  #icons {
-    height: 200px;
-    border-top: 2px solid #333333;
-    margin-top: 200px;
-  }
-  #icons h1 {
-    font-family: 'Oswald', sans-serif;
-    background-color: white;
-    font-size: 2em;
-    font-weight: 100;
-    margin: -25px auto;
-    text-align: center;
-    text-transform: uppercase;
-    width: 20%;
-  }
   .icon {
     display: none;
   }
@@ -1476,6 +1461,20 @@ ul#line3 li {
     background-size: cover;
     background-repeat: no-repeat;
 }
+  .project-section.work .projects .project.enter-page {
+    background: #CCCCCC;
+    background-position: top center;
+    border-top: 8px solid #333333;
+    border-bottom-left-radius: 75%;
+    border-bottom-right-radius: 75%;
+    height:888px;
+    left: 50%;
+    margin-left: -70%;
+    overflow: hidden;
+    width: 140%;
+    z-index: 2;
+    margin-top: 0;
+}
   .project-intro {
     height: auto;
     top: 0;
@@ -1546,12 +1545,29 @@ ul#line3 li {
   }
   .project-section .alt-heading.absolute h1 {
     font-family: 'Oswald', sans-serif;
-    font-weight: 600; 
+    font-weight: 600;
     line-height: 1.2em;
+    font-size: 3em;
+    margin-top: 40px
   }
   .project-section .alt-heading.absolute p {
     font-family: "Times New Roman", Times, serif;
     font-weight: 200; 
+  }
+  #recent-work {
+    border-bottom: 2px solid #333333;
+    width: 100%;
+    height: 20px;
+    margin-top: 80px;
+  }
+  #recent-work-text {
+    text-align: center;
+    font-size: 2em;
+    background-color: #ffffff;
+    margin: -20px auto;
+    width: 6em;
+    height: 80px;
+    white-space: nowrap;
   }
   #restricted {
     width: 100%;
