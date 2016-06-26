@@ -112,7 +112,7 @@ $window.scroll(function() {
   }
 });
     /* If the object is completely visible in the window, fade it in */
-
+//ICONS FADE IN CODE
 $window.scroll(function() { 
   var $lineogo = $('.icon');
   var $path = $lineogo.offset().top;
@@ -136,7 +136,7 @@ $window.scroll(function() {
 //         }, 250);
 //     }).scroll();
 // });
-
+//LINE DROP CODE 
 // $(function () {
 //     $(window).scroll(function () {
 //         var y = $(window).scrollTop();

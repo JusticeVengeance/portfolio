@@ -1,7 +1,7 @@
 <!-- index.html -->
 
 <!DOCTYPE html>
-<html lang="en" ng-app="justinVinge">
+<html lang="en" ng-app="justinVinge" ng-controller="formController">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Firebase related scripts linked below -->
@@ -53,33 +53,45 @@ function formController($scope, $http) {
 
     // process the form
     $scope.processForm = function() {
-      $http({
-      method  : 'POST',
-      url     : 'php/process.php',
-      data    : $.param($scope.formData),  // pass in data as strings
-      headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
-    })
-    .success(function(data) {
-    console.log(data);
+          $http({
+          method  : 'POST',
+          url     : 'php/process.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+        })
+        .success(function(data) {
+            firebase.database().ref('users/' + $scope.formData.name).push({
+                username: $scope.formData.name,
+                email: $scope.formData.email,
+                comments: $scope.formData.comments
+            });
+        console.log(data);
+            if (!data.success) {
+              // if not successful, bind errors to error variables
+              $scope.errorName = data.errors.name;
+              $scope.errorEmail = data.errors.email;
+              $scope.errorComments = data.errors.comments;
+            } else {
+                // if successful, bind success message to message
+                $scope.message = data.message;
 
-        if (!data.success) {
-          // if not successful, bind errors to error variables
-          $scope.errorName = data.errors.name;
-          $scope.errorEmail = data.errors.email;
-          $scope.errorComments = data.errors.comments;
-        } else {
-            // if successful, bind success message to message
-            $scope.message = data.message;
-        }
-    });
-};
+            }
+        });
+    };
 }
+$("#button-blue").click(function(e){
+    if (!$scope.formData.success) {
+        $('#form-div').animate({left:"0px"});
+        e.preventDefault();
+        e.stopPropagation();
+    };
+});
 </script>
 
 </head>
 
 <!-- apply the module and controller to the body -->
-<body ng-app="formApp" ng-controller="formController">
+<body>
 <!-- PROCESS FORM WITH AJAX (NEW) -->
 
 <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->

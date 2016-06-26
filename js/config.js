@@ -1,2 +1,2 @@
-angular.module('justinvinge.config', [])
-  .value('jvUrl', 'https://glaring-torch-1183.firebaseio.com');
+angular.module('justinVinge.config', [])
+  .value('jvUrl', 'https://personal-portfolio-735a2.firebaseio.com');
