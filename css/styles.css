@@ -1904,6 +1904,9 @@ input:focus, textarea:focus {
     display: none;
 }
 /*-------------mobile-nav style------------*/
+.mobile-menu-item {
+  display: none;
+}
 /* btn */
 #mobile-nav li.mobile-menu-button .menu {
   position: relative;
