@@ -1896,7 +1896,7 @@ li.mobile-menu-item {
 }
 ul#mobile-nav {
   list-style: none;
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   width: 50px;
