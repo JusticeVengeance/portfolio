@@ -1395,7 +1395,7 @@ ul#line3 li {
     -webkit-transform: rotate(0deg); transform: rotate(0deg);
     -webkit-transition: 0.2s ease; transition: 0.2s ease;
   }
-  .example1:focus {
+  .example1:active {
     -webkit-transform: rotate(90deg); transform: rotate(90deg);
   }
   #goodstuff {
@@ -1890,29 +1890,12 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-@media only screen and (max-width: 1200px) {
-  .project-intro h1:nth-child(2) {
-    font-size: 1em;
-  }
-}
-@media only screen and (max-width: 860px) {
-/*  #form-div{
-    left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-  }*/
-  .project-intro h1:nth-child(2) {
-    font-size: 0.6em;
-  }
-}
 /*-------------mobile-nav style------------*/
 li.mobile-menu-item {
   display: none;
 }
 ul#mobile-nav {
+  list-style: none;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -1942,7 +1925,7 @@ li.mobile-menu.button {
 #mobile-nav li.mobile-menu-button .menu span, #mobile-nav li.mobile-menu-button .menu span:before, #mobile-nav li.mobile-menu-button .menu span:after {
   width: 50px;
   height: 26px;
-  background-color: #000000;
+  background-color: #ffffff;
   display: block;
 }
 #mobile-nav li.mobile-menu-button .menu span:before {
@@ -1952,6 +1935,24 @@ li.mobile-menu.button {
   margin-top: 40px;
 }
 /* --- btn --- */
+@media only screen and (max-width: 1200px) {
+  .project-intro h1:nth-child(2) {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 860px) {
+/*  #form-div{
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }*/
+  .project-intro h1:nth-child(2) {
+    font-size: 0.6em;
+  }
+}
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
