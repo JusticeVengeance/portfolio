@@ -1903,7 +1903,37 @@ input:focus, textarea:focus {
     border-color: #ebccd1;
     display: none;
 }
-
+/*-------------mobile-nav style------------*/
+/* btn */
+.menu {
+  position: relative;
+  display:  inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+}
+.menu span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+.menu span:before, .menu span:after {
+  position: absolute;
+  content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #000000;
+  display: block;
+}
+.menu span:before {
+  margin-top: -12px;
+}
+.menu span:after {
+  margin-top: 12px;
+}
+/* --- btn --- */
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
