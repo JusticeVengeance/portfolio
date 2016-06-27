@@ -1904,6 +1904,14 @@ ul#mobile-nav {
   -webkit-backface-visibility: hidden;
   /*Most Important*/
 }
+.mobile-menu-expanded {
+  width: 100% !important;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
 /* btn */
 li.mobile-menu.button {
   list-style: none;

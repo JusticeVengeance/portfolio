@@ -111,6 +111,12 @@ $window.scroll(function() {
     $navtext.removeClass("nav-unclicked");
   }
 });
+
+$('.example1').click(function(){
+  $('.mobile-menu-button').style('display:none');
+  $('.mobile-menu-item').addClass('mobile-menu-expanded');
+});
+
     /* If the object is completely visible in the window, fade it in */
 //ICONS FADE IN CODE
 $window.scroll(function() { 
