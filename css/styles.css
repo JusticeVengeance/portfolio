@@ -1905,32 +1905,32 @@ input:focus, textarea:focus {
 }
 /*-------------mobile-nav style------------*/
 /* btn */
-.menu {
+#mobile-nav li.mobile-menu-button .menu {
   position: relative;
   display:  inline-block;
   width: 30px;
   height: 30px;
   margin: 25px;
 }
-.menu span {
+#mobile-nav li.mobile-menu-button .menu span {
   margin: 0 auto;
   position: relative;
   top: 12px;
 }
-.menu span:before, .menu span:after {
+#mobile-nav li.mobile-menu-button .menu span:before, #mobile-nav li.mobile-menu-button .menu span:after {
   position: absolute;
   content: '';
 }
-.menu span, .menu span:before, .menu span:after {
+#mobile-nav li.mobile-menu-button .menu span, #mobile-nav li.mobile-menu-button .menu span:before, #mobile-nav li.mobile-menu-button .menu span:after {
   width: 30px;
   height: 6px;
   background-color: #000000;
   display: block;
 }
-.menu span:before {
+#mobile-nav li.mobile-menu-button .menu span:before {
   margin-top: -12px;
 }
-.menu span:after {
+#mobile-nav li.mobile-menu-button .menu span:after {
   margin-top: 12px;
 }
 /* --- btn --- */
