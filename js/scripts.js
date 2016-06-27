@@ -123,7 +123,6 @@ $window.scroll(function() {
     console.log('line animated!');
   }
 });
-
 // $(function () {
 //     $(window).scroll(function () {
 //         var $sideline = $('#sideline');

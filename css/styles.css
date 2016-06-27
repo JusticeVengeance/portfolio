@@ -219,11 +219,6 @@ body {
   overflow: hidden;
 }
 #dropaline {
-  margin-top: 0;
-  text-align: center;
-  white-space: nowrap;
-}
-#dropaline h3 {
   color: #FC6200;
   font-size: 0.8em;
   font-weight: 100;
@@ -1726,11 +1721,10 @@ ul#line3 li {
   margin: 0;
 }
 #form-div {
-  background-color:#333333;
+  background-color:rgba(51,51,51,.95);
   left: -530px;
   padding-left:10px;
   padding-right:10px;
-  padding-top:10px;
   padding-bottom:10px;
   width: 450px;
   float: left;
@@ -1748,7 +1742,7 @@ ul#line3 li {
   background-color: #ffffff;
   border: 3px solid #ffffff;
   padding: 13px 13px 13px 54px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   width:100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1821,6 +1815,7 @@ input:focus, textarea:focus {
 #button-blue{
   font-family: 'Oswald', sans-serif;
   float:left;
+  margin-top: 10px;
   width: 100%;
   border: none;
   cursor:pointer;
@@ -1879,6 +1874,35 @@ input:focus, textarea:focus {
   }
 }
 
+.alert-box {
+    position: fixed;
+    margin: 200px auto;
+    z-index: 10;
+    margin-left: 50%;
+    width: 200px;
+    left: -100px;
+    opacity: .9;
+    color: #ffffff;
+    background-color: #333333;
+    border: none;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.success {
+    color: #3c763d;
+    background-color: #333333;
+    border-color: #d6e9c6;
+    display: none;
+}
+
+.failure {
+    color: #a94442;
+    background-color: #333333;
+    border-color: #ebccd1;
+    display: none;
+}
 
 /* ----------- iPhone 4 and 4S ----------- */
 

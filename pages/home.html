@@ -1,5 +1,7 @@
 <!-- Removed inline styles; they're in the CSS already. -->
 <a href="index.html">  
+<div class="pc-only alert-box success">Thanks!</div>
+<div class="pc-only alert-box failure">The form is incomplete</div>
   <div class="col-md-1" id="logo">
     <div id="lion"><img class="pc-only" src="http://justicevengeance.github.io/portfolio/img/logo6.png"/><img class="mobile-only" src="img/JVDlogo_white.png"/>
     </div>
@@ -396,11 +398,10 @@
     </svg> -->
   </li>
 </ul>
-<div id="sideline"></div>
+<!-- <div id="sideline"></div> -->
 <div id="nav">
-  <div class="e nav-item" id="dropaline">
-    <a href=""></a>
-    <h3>DROP A LINE</h3>
+<!--   <div class="e nav-item" id="dropaline"> -->
+    <h3 id="dropaline" class="e nav-item">DROP A LINE</h3>
     <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
     height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
     <g id="Layer_1" display="none">
@@ -504,7 +505,7 @@
     <g id="Layer_4" display="none">
     </g>
     </svg> -->
-  </div>
+<!--   </div> end div dropaline-->
 </div>
 <div id="form-main">
   <div id="form-div">
@@ -517,19 +518,19 @@
       <!-- NAME --> 
       <div id="name-group" class="form-group name" ng-class="{ 'has-error' : errorName }"> 
         <input id="name" type="text" name="name" class="form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" ng-model="formData.name"> 
-        <span class="help-block" ng-show="errorName">{{ errorName }}</span> 
+        <span class="help-block" style="color:#a94442" ng-show="errorName">{{ errorName }}</span> 
       </div>
 
       <!-- SUPERHERO NAME -->
       <div id="email-group" class="form-group email" ng-class="{ 'has-error' : errorEmail }"> 
           <input id="email" type="text" name="email" class="form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" ng-model="formData.email"> 
-          <span class="help-block" ng-show="errorEmail">{{ errorEmail }}</span> 
+          <span class="help-block" style="color:#a94442" ng-show="errorEmail">{{ errorEmail }}</span> 
       </div>
 
       <!-- SUPERHERO NAME -->
       <div id="comments-group" class="form-group comments" ng-class="{ 'has-error' : errorComments }"> 
           <input id="comments" type="text" name="comments" class="form-control validate[required,custom[onlyLetter],length[6,300]] feedback-input" placeholder="Comments" ng-model="formData.comments"> 
-          <span class="help-block" ng-show="errorComments">{{ errorComments }}</span> 
+          <span class="help-block" style="color:#a94442" ng-show="errorComments">{{ errorComments }}</span> 
       </div>
 
       <!-- SUBMIT BUTTON -->
@@ -540,9 +541,9 @@
     </form>
 
       <!-- SHOW DATA FROM INPUTS AS THEY ARE BEING TYPED -->
-    <pre>
+    <!-- <pre>
         {{ formData }}
-    </pre>
+    </pre> -->
 
     <!-- <form action="php/process.php" method="post" id="form1">    
       <p class="name">
@@ -939,9 +940,7 @@ $('.tile-big').stop().animate({width:"60%"});
   $(document,$close).click(function(){
     $form.animate({left:"-530px"});
   });
-  $window.scroll(function(){
-    $form.animate({left:"-530px"});
-  });
+
 </script>
 <script type="text/javascript">
 $("#web-button").click(function() {

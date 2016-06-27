@@ -40,6 +40,7 @@
     <script src="js/app.js"></script>
     <script src="js/config.js"></script>
     <!-- PROCESS FORM WITH AJAX (NEW) -->
+
 <script>
 // define angular module/app
 var formApp = angular.module('formApp', []);
@@ -60,13 +61,13 @@ function formController($scope, $http) {
           headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
         })
         .success(function(data) {
-            firebase.database().ref('users/' + $scope.formData.name).push({
-                username: $scope.formData.name,
-                email: $scope.formData.email,
-                comments: $scope.formData.comments
-            });
         console.log(data);
             if (!data.success) {
+            $('#form-div').animate({left:"0px"});
+            //Failed form submission message
+            
+              $( "div.failure" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+            
               // if not successful, bind errors to error variables
               $scope.errorName = data.errors.name;
               $scope.errorEmail = data.errors.email;
@@ -74,18 +75,27 @@ function formController($scope, $http) {
             } else {
                 // if successful, bind success message to message
                 $scope.message = data.message;
-
             }
+            //This bit of code handles the push of field data to firebase if all fields are complete.
+            firebase.database().ref('users/' + $scope.formData.name).push({
+                username: $scope.formData.name,
+                email: $scope.formData.email,
+                comments: $scope.formData.comments
+            });
+            //Successful form submission message
+
+              $( "div.success" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+            
         });
     };
 }
-$("#button-blue").click(function(e){
-    if (!$scope.formData.success) {
-        $('#form-div').animate({left:"0px"});
-        e.preventDefault();
-        e.stopPropagation();
-    };
-});
+// $("#button-blue").click(function(e){
+//     if (!data.success) {
+//         $('#form-div').animate({left:"0px"});
+//         e.preventDefault();
+//         e.stopPropagation();
+//     };
+// });
 </script>
 
 </head>
