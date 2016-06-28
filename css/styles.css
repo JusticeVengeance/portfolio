@@ -1892,17 +1892,28 @@ input:focus, textarea:focus {
 
 /*-------------mobile-nav style------------*/
 li.mobile-menu-item {
+  color: #ffffff;
   display: none;
+  float: left;
+  height: 87px;
+  width: 33.2%;
+  line-height: 87px;
+  text-align: center;
+  background-color: #333333;
+  border-right: 1px solid #fff;
+  white-space: nowrap;
 }
 ul#mobile-nav {
+  cursor: pointer;
   list-style: none;
   position: absolute;
   top: 0px;
   right: 0px;
   width: 50px;
-  height: 50px;
+  height: 100px;
   -webkit-backface-visibility: hidden;
   /*Most Important*/
+  z-index: 20;
 }
 .mobile-menu-expanded {
   width: 100% !important;

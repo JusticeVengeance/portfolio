@@ -7,7 +7,7 @@
     </div>
   </div><!--END LOGO DIV-->
 </a>
-<ul class="mobile-only" id="mobile-nav"><li class="mobile-menu-button"><a href="#" class="menu example1"><span></span></a></li><li class="mobile-menu-item">About Me</li><li class="mobile-menu-item">Recent Work</li><li class="mobile-menu-item">Drop a Line</li></ul>
+<ul class="" id="mobile-nav"><li class="mobile-menu-button"><a href="#" class="menu example1"><span></span></a></li><li class="mobile-menu-item">About Me</li><li class="mobile-menu-item">Recent Work</li><li class="mobile-menu-item">Drop a Line</li></ul>
 <img class="pc-only" id="image" src="http://justicevengeance.github.io/portfolio/img/spokane_blkwht.jpg" />
 <div class="mobile-only" id="image-container">
   <div class="mobile-only" id="image"></div>
@@ -872,7 +872,15 @@
   <h1>Justin Vinge Design</h1>
   <a href="jv@justinvinge.com"><h1>jv@justinvinge.com</h1></a>
 </div> <!--END DIV ID CONTACT-->
-
+<script type="text/javascript">
+$('#mobile-nav').click(function(){
+  console.log('successful click!');
+  $('.mobile-menu-button').css("display", "none");
+  $('.mobile-menu-item').css("display", "table-cell")
+  $('#mobile-nav').addClass('mobile-menu-expanded');
+  $('#mobile-nav').css("background-color", "#333333")
+});
+</script>
 <script type="text/javascript">
 $( ".tile-big" ).hover(
 function() {
