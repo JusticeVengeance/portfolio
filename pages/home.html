@@ -7,8 +7,8 @@
     </div>
   </div><!--END LOGO DIV-->
 </a>
-<div class="mobile-only mobile-nav-button"><a href="#" class="menu mobile-nav-inactive"><span></span></a></div>
-<ul class="" id="mobile-nav"><li class="mobile-nav-item">About Me</li><li class="mobile-nav-item">Recent Work</li><li class="mobile-nav-item">Drop a Line</li></ul>
+<div class="mobile-nav-button"><a href="#" class="menu mobile-nav-inactive"><span></span></a></div>
+<ul class="mobile-only" id="mobile-nav"><li id="mobile-recent-work" class="mobile-nav-item">Recent Work</li><li id="mobile-drop-a-line" class="mobile-nav-item">Drop a Line</li></ul>
 <img class="pc-only" id="image" src="http://justicevengeance.github.io/portfolio/img/spokane_blkwht.jpg" />
 <div class="mobile-only" id="image-container">
   <div class="mobile-only" id="image"></div>
@@ -970,6 +970,11 @@ $("#advertising-button").click(function() {
 $("#top-launch").click(function() {
   $('html,body').animate({
       scrollTop: $('body').offset().top},
+      'slow');
+});
+$("#mobile-recent-work").click(function() {
+  $('html,body').animate({
+      scrollTop: $('#recent-work-text').offset().top},
       'slow');
 });
 </script>
