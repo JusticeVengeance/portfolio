@@ -220,19 +220,6 @@ body {
   padding-top:60px;
   width: 60px;
 }
-#telephone {
-  background-color: #FC6200;
-  float: left;
-  height: 30px;
-  position: relative;
-  width: 7%;
-  z-index: -2;
-  left: 6px;
-  top: 50vh;
-}
-#telephone:hover{
-  overflow: hidden;
-}
 #dropaline {
   color: #FC6200;
   font-size: 0.8em;
@@ -1237,6 +1224,19 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   float: left;
   width: 30%;
 }
+#telephone {
+  background-color: #FC6200;
+  float: left;
+  height: 30px;
+  position: relative;
+  width: 7%;
+  z-index: -2;
+  left: 6px;
+  top: 50vh;
+}
+#telephone:hover{
+  overflow: hidden;
+}
 #text-container {
   width: 100%;
 }
@@ -1389,14 +1389,6 @@ ul#line3 li {
   }
   .enter-page {
     display: none;
-  }
-    /* example 1 */
-  .example1 {
-    -webkit-transform: rotate(0deg); transform: rotate(0deg);
-    -webkit-transition: 0.2s ease; transition: 0.2s ease;
-  }
-  .example1:active {
-    -webkit-transform: rotate(90deg); transform: rotate(90deg);
   }
   #goodstuff {
     margin: 0;
@@ -1891,66 +1883,96 @@ input:focus, textarea:focus {
 }
 
 /*-------------mobile-nav style------------*/
-li.mobile-menu-item {
+li.mobile-nav-item {
   color: #ffffff;
   display: none;
   float: left;
-  height: 87px;
-  width: 33.2%;
+  font-size: 1em;
+  height: 100px;
+  width: 33.3%;
   line-height: 87px;
   text-align: center;
-  background-color: #333333;
-  border-right: 1px solid #fff;
+  text-transform: uppercase;
   white-space: nowrap;
+}
+.mobile-nav-item-active {
+  display: table-cell !important;
 }
 ul#mobile-nav {
   cursor: pointer;
   list-style: none;
+  margin-right: 10%;
+  margin-top: 20px;
+  padding: 0;
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 50px;
   height: 100px;
   -webkit-backface-visibility: hidden;
   /*Most Important*/
+  width: 0;
   z-index: 20;
+  -webkit-transition: width .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  -ms-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+.mobile-menu-collapsed {
+  width: 0%;
+  -webkit-transition: width .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  -ms-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
 }
 .mobile-menu-expanded {
-  width: 100% !important;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -o-transition: .3s ease;
-  -ms-transition: .3s ease;
-  transition: .3s ease;
+  background-color: #333333;
+  width: 80% !important;
+  -webkit-transition: width .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  -ms-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
 }
 /* btn */
-li.mobile-menu.button {
-  list-style: none;
+.mobile-nav-button {
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 25;
 }
-#mobile-nav li.mobile-menu-button .menu {
+.mobile-nav-inactive {
+  -webkit-transform: rotate(0deg); transform: rotate(0deg);
+  -webkit-transition: 0.2s ease; transition: 0.2s ease;
+}
+.mobile-nav-active {
+  -webkit-transform: rotate(90deg); transform: rotate(90deg);
+}
+.mobile-nav-button .menu {
   display: inline-block;
   height: 100px;
   margin: 0;
 }
-#mobile-nav li.mobile-menu-button .menu span {
+.mobile-nav-button .menu span {
   margin: 0 auto;
   position: relative;
   top: 50px;
 }
-#mobile-nav li.mobile-menu-button .menu span:before, #mobile-nav li.mobile-menu-button .menu span:after {
+.mobile-nav-button .menu span:before, .mobile-nav-button .menu span:after {
   position: absolute;
   content: '';
 }
-#mobile-nav li.mobile-menu-button .menu span, #mobile-nav li.mobile-menu-button .menu span:before, #mobile-nav li.mobile-menu-button .menu span:after {
-  width: 50px;
+.mobile-nav-button .menu span, .mobile-nav-button .menu span:before, .mobile-nav-button .menu span:after {
+  width: 100px;
   height: 26px;
   background-color: #ffffff;
   display: block;
 }
-#mobile-nav li.mobile-menu-button .menu span:before {
+.mobile-nav-button .menu span:before {
   margin-top: -40px;
 }
-#mobile-nav li.mobile-menu-button .menu span:after {
+.mobile-nav-button .menu span:after {
   margin-top: 40px;
 }
 /* --- btn --- */
