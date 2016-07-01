@@ -1446,6 +1446,9 @@ ul#line3 li {
     font-size: 0.5em;
     text-align: center; 
   }
+  .mobile-full-size {
+    width: 100%;
+  }
   .mobile-half-size {
     width: 50%;
   }
@@ -1456,6 +1459,7 @@ ul#line3 li {
   .panel-default {
     border: none;
   }
+  /*BOOTSTRAP OVERRIDE*/
   .pc-only {
     display: none;
   }
