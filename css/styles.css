@@ -224,7 +224,7 @@ body {
   color: #FC6200;
   font-size: 0.8em;
   font-weight: 100;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
@@ -261,7 +261,7 @@ body {
   color: #FFFFFF;
   font-size: 0.7em;
   font-weight: 100;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
@@ -787,10 +787,10 @@ figure#fortune-circle {
 }
   #logo {
     height: auto;
-    padding: 3%;
-    margin: 10px auto;
+    padding: 1%;
+    margin: 0px auto;
     position: absolute;
-    width: 8%;
+    width: 15%;
     z-index: 3;
   }
 .marker p {
@@ -1452,6 +1452,10 @@ ul#line3 li {
   #nav-buttons, #nav {
     display:none;
   }
+  /*BOOTSTRAP OVERRIDE*/
+  .panel-default {
+    border: none;
+  }
   .pc-only {
     display: none;
   }
@@ -1626,11 +1630,15 @@ ul#line3 li {
 .top-launch-visible:hover {
   margin-top: -20px; 
 }
-.container {
+.container-web-comps {
+  height: auto;
   width:100%;
-  height:800px;
 }
-.container img {
+.container-ads {
+  height: 800px;
+  width: 100%;
+}
+.container-ads img {
   max-width: 100%;
   height: auto;
 }
@@ -1910,15 +1918,9 @@ ul#mobile-nav {
   height: 100px;
   -webkit-backface-visibility: hidden;
   /*Most Important*/
-  width: 0;
   z-index: 20;
-  -webkit-transition: width .3s ease-in-out;
-  -moz-transition: width .3s ease-in-out;
-  -o-transition: width .3s ease-in-out;
-  -ms-transition: width .3s ease-in-out;
-  transition: width .3s ease-in-out;
 }
-.mobile-menu-collapsed {
+.mobile-nav-collapsed {
   width: 0%;
   -webkit-transition: width .3s ease-in-out;
   -moz-transition: width .3s ease-in-out;
@@ -1926,7 +1928,7 @@ ul#mobile-nav {
   -ms-transition: width .3s ease-in-out;
   transition: width .3s ease-in-out;
 }
-.mobile-menu-expanded {
+.mobile-nav-expanded {
   /* background-color:rgba(51,51,51,.50); */
   width: 65% !important;
   -webkit-transition: width .3s ease-in-out;

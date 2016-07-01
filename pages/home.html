@@ -2,13 +2,13 @@
 <a href="index.html">  
   <div class="pc-only alert-box success">Thanks!</div>
   <div class="pc-only alert-box failure">The form is incomplete</div>
-  <div class="col-md-1" id="logo">
+  <div id="logo">
     <div id="lion"><img class="pc-only" src="http://justicevengeance.github.io/portfolio/img/logo6.png"/><img class="mobile-only" src="img/JVDlogo_white.png"/>
     </div>
   </div><!--END LOGO DIV-->
 </a>
-<div class="mobile-nav-button"><a href="#" class="menu mobile-nav-inactive"><span></span></a></div>
-<ul class="mobile-only" id="mobile-nav"><li id="mobile-recent-work" class="mobile-nav-item">Recent Work</li><li id="mobile-drop-a-line" class="mobile-nav-item">Drop a Line</li></ul>
+<div class="mobile-only mobile-nav-button"><a href="#" class="menu mobile-nav-inactive"><span></span></a></div>
+<ul class="mobile-nav-collapsed" id="mobile-nav"><li id="mobile-recent-work" class="mobile-nav-item">Recent Work</li><li id="mobile-drop-a-line" class="mobile-nav-item">Drop a Line</li></ul>
 <img class="pc-only" id="image" src="http://justicevengeance.github.io/portfolio/img/spokane_blkwht.jpg" />
 <div class="mobile-only" id="image-container">
   <div class="mobile-only" id="image"></div>
@@ -402,7 +402,7 @@
 </ul>
 <!-- <div id="sideline"></div> -->
 <div id="nav">
-<!--   <div class="e nav-item" id="dropaline"> -->
+  <!--   <div class="e nav-item" id="dropaline"> -->
     <h3 id="dropaline" class="e nav-item">DROP A LINE</h3>
     <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
     height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -519,19 +519,19 @@
     <form ng-submit="processForm()"> 
       <!-- NAME --> 
       <div id="name-group" class="form-group name" ng-class="{ 'has-error' : errorName }"> 
-        <input id="name" type="text" name="name" class="form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" ng-model="formData.name"> 
+        <input id="name" type="text" name="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" ng-model="formData.name"> 
         <span class="help-block" style="color:#a94442" ng-show="errorName">{{ errorName }}</span> 
       </div>
 
       <!-- SUPERHERO NAME -->
       <div id="email-group" class="form-group email" ng-class="{ 'has-error' : errorEmail }"> 
-          <input id="email" type="text" name="email" class="form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" ng-model="formData.email"> 
+          <input id="email" type="text" name="email" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" ng-model="formData.email"> 
           <span class="help-block" style="color:#a94442" ng-show="errorEmail">{{ errorEmail }}</span> 
       </div>
 
       <!-- SUPERHERO NAME -->
       <div id="comments-group" class="form-group comments" ng-class="{ 'has-error' : errorComments }"> 
-          <input id="comments" type="text" name="comments" class="form-control validate[required,custom[onlyLetter],length[6,300]] feedback-input" placeholder="Comments" ng-model="formData.comments"> 
+          <input id="comments" type="text" name="comments" class="validate[required,custom[onlyLetter],length[6,300]] feedback-input" placeholder="Comments" ng-model="formData.comments"> 
           <span class="help-block" style="color:#a94442" ng-show="errorComments">{{ errorComments }}</span> 
       </div>
 
@@ -828,17 +828,55 @@
 </div><!--END 80% WIDTH RESTRICTION CONTAINER -->
 <div class="section" id="goodstuff">
   <h1 id="web-section">WEB UI/UX</h1>
-  <div class="comps web">
-    <div>
-      <img class="half pc-only" src="img/deviine_home_imac.png">
+<div class="container-web-comps">
+  <!-- BOOTSTRAP ACCORDION -->
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="comps web">
+        <div>
+          <img class="half pc-only" src="img/deviine_home_imac.png">
+        </div>
+        <div>
+          <img class="half pc-only" src="img/deviine_zoom_imac.png">
+        </div>
+      </div><!-- END OF THE FIRST WEB COMPS CLASS DIV -->
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">See More...</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+          <img class="full pc-only" src="img/deviine_strains_macbook.png">
+        </div><!-- END PANEL BODY CLASS -->
+      </div><!-- END COLLAPSE 1 DIV -->
+    </div><!-- END OF THIS PANEL -->
+<!--     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
     </div>
-    <div>
-      <img class="half pc-only" src="img/deviine_zoom_imac.png">
-    </div>
-    <div>
-      <img class="full pc-only" src="img/deviine_strains_macbook.png">
-    </div>
-  </div><!--END DIV CLASS COMPS-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div> -->
+  </div> <!-- END PANEL GROUPS -->
+</div> <!-- END WEB COMPS -->
   <h1 id="logo-section">Logo Design</h1>
   <div class="comps logos">
     <div>
@@ -857,7 +895,7 @@
   <h1 id="ad-section">Advertising</h1>
 </div>
 
-<div class="container">
+<div class="container-ads">
   <div class="tile-big">
   <img src="img/extremedy_poster.jpg">
   </div>
@@ -876,9 +914,10 @@
 <script type="text/javascript">
 var $mobileMenuButton = $('.mobile-nav-button');
 $('.mobile-nav-button').click(function() {
-  $( "#mobile-nav" ).toggleClass( "mobile-menu-expanded" );
-  $( ".menu" ).toggleClass("mobile-nav-active");
+  //$(".mobile-nav-item").css("display", "table-cell !important");
   $(".mobile-nav-item").toggleClass( "mobile-nav-item-active" );
+  $( "#mobile-nav" ).toggleClass( "mobile-nav-expanded" );
+  $( ".menu" ).toggleClass("mobile-nav-active");
 });
 </script>
 <script type="text/javascript">
@@ -972,7 +1011,7 @@ $("#top-launch").click(function() {
       scrollTop: $('body').offset().top},
       'slow');
 });
-$("#mobile-recent-work").focus(function() {
+$("#mobile-recent-work").click(function() {
   $('html,body').animate({
       scrollTop: $('#recent-work-text').offset().top},
       'slow');
