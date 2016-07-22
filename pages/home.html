@@ -1,3 +1,77 @@
+<!-- Modal for the description of comps must go here for now due to z-index conflicts -->
+
+<div id="normalModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="modal-title">DeViine <!-- @TODO put in a logo for the header rather than text --></h2>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <h3>Client</h3>
+            <p>Stash formerly DeViine</p>
+          </li>
+          <li>
+            <h3>Role</h3>
+            <p>Web Developer / Server Side Developer</p>
+          </li>
+          <li>
+            <h3>Overview</h3>
+            <p>DeViine is an innovative idea to bring product-specific advertising to industry retailers and producers.</p>
+          </li>
+          <li>
+            <h3>Result</h3>
+            <p>DeViine has since adjusted its direction and is currently under development with the new identity "Stash". The website is currently live at <a target="_blank" class="modal-links" href="http://www.stash.reviews/">www.stash.reviews</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+      <!-- @TODO Fill in a result section here -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /Modal -->
+
+<!-- Modal for the description of comps must go here for now due to z-index conflicts -->
+
+<div id="kpModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="modal-title">DeViine <!-- @TODO put in a logo for the header rather than text --></h2>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <h3>Client</h3>
+            <p>State Representative: Kevin Parker</p>
+          </li>
+          <li>
+            <h3>Role</h3>
+            <p>Web Designer & Developer</p>
+          </li>
+          <li>
+            <h3>Overview</h3>
+            <p>I was personally tasked with creating a website portfolio to market Mr. Parker's experiences as a speaker so that he may provide reference for clients interested in hiring him for events.</p>
+          </li>
+          <li>
+            <h3>Result</h3>
+            <p>Mr. Parker's portfolio website is currently under development.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+      <!-- @TODO Fill in a result section here -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /Modal -->
+
 <!-- Removed inline styles; they're in the CSS already. -->
 <a href="index.html">  
   <div class="pc-only alert-box success">Thanks!</div>
@@ -829,10 +903,10 @@
 <div class="section" id="goodstuff">
   <h1 id="web-section">WEB UI/UX</h1>
 <div class="container-web-comps">
-<h2 style="font-size: 1em; padding: 10px 0 10px 0; text-align: center; width: 100%;">Influential Speaker Portfolio</h2>
+<h2 style="border-top: 10px solid #333;border-bottom: 10px solid #333;font-size: 1.5em;margin-bottom:-5px;text-align: center;width: 100%;">Kevin Parker: Influential Speaker<a data-toggle="modal" href="#kpModal" id="modal-btn" class="btn btn-default">•••</a> </h2>
   <!-- BOOTSTRAP ACCORDION -->
   <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+    <div id="comp-panel" class="panel panel-default" style="border: none;">
       <div class="comps web">
         <div>
           <img class="half mobile-full-size" src="img/kevinp_intro_imac.png">
@@ -849,24 +923,9 @@
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
       </div> -->
-    </div><!-- END OF THIS PANEL -->
-    <h2 style="font-size: 1em; padding: 10px 0 10px 0; text-align: center; width: 100%;">DeViine Cannabis Marketing</h2>
-    <!-- <div class="modal-container pc-only">
-      <input id="modal-toggle" type="checkbox">
-      <label class="modal-btn" for="modal-toggle">•••</label> 
-      <label class="modal-backdrop" for="modal-toggle"></label>
-      <div class="modal-content">
-        <label class="modal-close" for="modal-toggle">&#x2715;</label>
-        <h2>DeViine Cannabis Marketing</h2><hr />
-          <ul style="list-style:none;">
-            <li><b>Client</b>:<br> DeViine inc.</li><br>
-            <li><b>Role</b>:<br> Front End Web Developer</li><br>
-            <li><b>Goal</b>:<br> Create a web application to market for new cannabis-related businesses in Washington State. </li><br>
-            <li><b>Result</b>:<br> Company has adopted a new name and its website is currently live at <a href="www.stash.reviews">www.stash.reviews</a></li>
-          </ul>  
-      </div>          
-    </div> --><!--END INFO MODAL-->  
-    <div class="panel panel-default">
+    </div><!-- END OF THIS PANEL --> 
+    <div id="comp-panel" class="panel panel-default" style="border: none;">
+      <h2 style="border-top: 10px solid #333;border-bottom: 10px solid #333;font-size: 1.5em;text-align: center;width: 100%;">DeViine Cannabis Marketing<a data-toggle="modal" href="#normalModal" id="modal-btn" class="btn btn-default">•••</a> </h2>
       <div class="comps web">
         <div>
           <img class="half mobile-full-size" src="img/deviine_home_imac.png">
@@ -880,7 +939,7 @@
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">See More...</a>
         </h4>
       </div>
-      <div id="collapse2" class="pc-only panel-collapse collapse">
+      <div id="collapse1" class="pc-only panel-collapse collapse">
         <div class="panel-body">
           <img class="full pc-only" src="img/deviine_strains_macbook.png">
         </div><!-- END PANEL BODY CLASS -->
@@ -1038,5 +1097,14 @@ $("#mobile-recent-work").click(function() {
   $('html,body').animate({
       scrollTop: $('#recent-work-text').offset().top},
       'slow');
+});
+</script>
+
+<script type="text/javascript">
+  // when .modal-wide opened, set content-body height based on browser height; 200 is appx height of modal padding, modal title and button bar
+
+$(".modal-wide").on("show.bs.modal", function() {
+  var height = $(window).height() - 200;
+  $(this).find(".modal-body").css("max-height", height);
 });
 </script>

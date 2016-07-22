@@ -513,6 +513,8 @@ figure#fortune-circle {
   z-index: 2;
 }
 #goodstuff a {
+  border: none;
+  line-height: .5em;
   text-decoration: none;
 }
 #goodstuff .project h1 {
@@ -541,9 +543,10 @@ figure#fortune-circle {
   width: 5%;
 }
 #goodstuff .comps {
+  background-color: #dddddd;
   float:left;
   margin:0;
-  padding: 0;
+  padding-top: 4px;
   position: relative;
   width: 100%
 }
@@ -893,6 +896,11 @@ figure#fortune-circle {
 #phone .copy p {
   margin: -5px auto;
   padding: 10px 0 0 10px;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #ddd;
+    border-color: #ddd;
 }
 .project-intro {
     font-size: 100px;
@@ -1369,7 +1377,59 @@ ul#line3 li {
   width: 40%;
 }
 
-
+#normal-modal {
+  z-index: 1000;
+}
+.modal-body ul {
+  list-style: none;
+}
+.modal-body h3 {
+  color: #FC6200;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+.modal-body p {
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+}
+.modal-links {
+  color: #FC6200;
+  text-decoration: none;
+}
+.modal-title {
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+a#modal-btn {
+  border: none;
+  color: #333333;
+  transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -webkit-transition: color .5s ease-in-out;
+}
+a#modal-btn:hover {
+  border: none;
+  color: #FC6200;
+  background: none;
+}
+a#modal-btn:active {
+  background: none;
+  border: none;
+  outline: 0;
+}
+a#modal-btn:focus {
+  background: none;
+  outline: 0;
+}
 /************************RESPONSIVE DESIGN*********************************/
 
 
@@ -1451,108 +1511,18 @@ ul#line3 li {
   }
   .mobile-half-size {
     width: 50%;
-  }
-/*.modal-container, .modal-container:before, .modal-container:after { 
-  box-sizing: border-box; 
-}
-.modal-container {
-  margin: 60px auto;
-  padding-top: 0px;
-  position: relative;
-  width: 200px;
-}    
-.modal-container .modal-btn {
-  display: block;
-  margin: 0 auto;      
-  color: #000;  
-  width: auto;
-  height: auto;    
-  line-height: 50px;    
-  font-size: 22px;       
-  border: 0;
-  border-radius: 3px;  
-  cursor: pointer;
-  text-align: center;
-  transition: color 0.3s ease-in;
-}
-.modal-container .modal-btn &:hover { 
-  color: #FC6200; 
-}
-.modal-content ul li a {
-  text-decoration: none;
-  color: #FC6200;
-}
-.modal-content h2 {
-  color: #FC6200;
-  font-weight: 100;
-}
-.modal-content b {
-  color: #FC6200;
-  font-size: 1.2em;
-  font-weight: 100;
-}
-.modal-content, 
-.modal-backdrop {
-  height: 0; 
-  width: 0; 
-  opacity: 0;    
-  visibility: hidden;
-  overflow: scroll; 
-  cursor: pointer;
-  transition: opacity 0.2s ease-in; 
-}
-.modal-close {
-  color: #aaa;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  padding-top: 3px;
-  background: #fff;
-  font-size: 16px;
-  width: 25px;
-  height: 25px;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-}
-.modal-close &:hover { 
-  color: #333; 
-}             
-#modal-toggle {
-  display: none;  
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  visibility: visible;
-  opacity: 1;      
-  transition: opacity 0.2s ease-in; 
-}
-&.active ~ .modal-content,
-&:checked ~ .modal-content {
-  opacity: 1;
-  background-color: #fff;
-  max-width: 400px;
-  width: 600px;
-  height: 480px;
-  padding: 10px 30px;
-  position: fixed;
-  left: calc(50% - 200px);
-  top: 12%;
-  border-radius: 4px;
-  z-index: 999;
-  pointer-events: auto;
-  cursor: auto;
-  visibility: visible;      
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);                  
-} */ 
+  }  
   #nav-buttons, #nav {
     display:none;
   }
   /*BOOTSTRAP OVERRIDE*/
+  .panel {
+    border: none !important;
+  }
   .panel-default {
+    border-color: #ffffff !important;
+  }
+  #comp-panel {
     border: none;
   }
   /*BOOTSTRAP OVERRIDE*/
