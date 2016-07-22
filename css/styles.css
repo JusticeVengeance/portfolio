@@ -1376,10 +1376,6 @@ ul#line3 li {
   margin: 0 0 -4px 2.5%;
   width: 40%;
 }
-
-#normal-modal {
-  z-index: 1000;
-}
 .modal-body ul {
   list-style: none;
 }
