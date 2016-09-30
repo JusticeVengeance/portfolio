@@ -1,75 +1,151 @@
-var $document = $(document),
-    $element = $('#header'),
-    className = 'hide-bg';
+// //Returns true if the specified element has been scrolled into the viewport.
+// function isElementInViewport(elem) {
+//     var $elem = $('path');
 
-$(document).ready(function() {
-    $(".divider").animate({width: "+=50%"}, 2000);
-    $(".divider").animate({width: "-=50%"}, 2000);
-setTimeout(arguments.callee, 1000);
+//     // Get the scroll position of the page.
+//     var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+//     var viewportTop = $(scrollElem).scrollTop();
+//     var viewportBottom = viewportTop + $(window).height();
+
+//     // Get the position of the element on the page.
+//     var elemTop = Math.round( $elem.offset().top );
+//     var elemBottom = elemTop + $elem.height();
+
+//     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+// }
+
+// // Check if it's time to start the animation.
+// function checkAnimation() {
+//     var $elem = $('.line-animated');
+//     console.log('shitty scroll works');
+//     // If the animation has already been started
+//     if ($elem.hasClass('start')) return;
+// console.log('has class');
+//     if (isElementInViewport($elem)) {
+//         // Start the animation
+//         $elem.addClass('start');
+//         console.log('added class');
+//     }
+// }
+
+// // Capture scroll events
+// $(window).scroll(function(){
+//     checkAnimation();
+// });
+
+
+
+
+// $(document).ready(function () {
+// var $line = $('.line-animated');
+// var firstScroll = false;
+// $(".line-animated").css("opacity", "0");
+
+// $(window).on('scroll', function() {
+//   console.log('scroll works');
+//   var scroll = $(window).scrollTop();
+//   if(scroll >= $('#nes').offset().top && !firstScroll) {
+//     doSomeComplicatedStuff();
+//   }
+// });
+// function doSomeComplicatedStuff() {
+//   console.log('doing complicated stuff');
+//   firstScroll = true;        
+//   $(".line-animated").css("strokeDashoffset", "988.01");
+//   //Reset paths to starting position
+//   lineDraw();
+// }
+// function lineDraw(){
+// var length = $(".line-animated").getTotalLength();
+// // Clear any previous transition
+// $line.style.transition = $line.style.WebkitTransition =
+//   'none';
+
+// // Set up the starting positions
+// $line.style.strokeDasharray = length + ' ' + length; 
+// $line.style.strokeDashoffset = length;
+// // Trigger a layout so styles are calculated & the browser 
+// // picks up the starting position before animating
+// $line.getBoundingClientRect();
+// // Define our transition
+// $line.style.transition = $line.style.WebkitTransition =
+//   'stroke-dashoffset 7s ease-in-out';
+//   'opacity 7s ease-in-out';
+// // Go!
+// $line.style.strokeDashoffset = '0';
+// $line.style.opacity = '1';
+//   //0 is the image fully animated, 988.01 is the starting point.
+// };
+// });
+
+// Caching jQuery selectors: another micro-optimization / protip.
+var $window = $(window);
+$window.scroll(function() {
+  var scroll = $window.scrollTop();
+  var $image = $('#image');
+  var $logo = $('#logo-jvd');
+  var $toplaunch = $('#top-launch');
+  var $navbuttons = $('#nav-buttons');
+  var $results = $('#results');
+  var $navtext = $('#nav-text');
+  var $restricted = $('#restricted');
+
+  // @see http://api.jquery.com/offset/
+  if(scroll >= $('#restricted').offset().top) {
+    $image.addClass('fix-spokane');
+    $image.css('transform', '');
+    $logo.addClass('logo-down');
+    $logo.removeClass('logo-up');
+    $toplaunch.addClass('top-launch-visible');
+    $toplaunch.addClass('top-launch-animate');
+    $navbuttons.css("z-index", "6");
+    $navtext.addClass("nav-unclicked");
+  } else {
+    $image.removeClass('fix-spokane');
+    $image.css("transform","translateY(" +  (scroll/2)  + "px)");
+    $logo.addClass('logo-up');
+    $logo.removeClass('logo-down');
+    $toplaunch.removeClass('top-launch-animate');
+    $toplaunch.removeClass('top-launch-visible');
+    $navbuttons.css("z-index", "-3");
+    $navtext.removeClass("nav-unclicked");
+  }
 });
 
-$document.scroll(function() {
-//   $element.toggleClass(className, $document.scrollTop() >= 50);
+    /* If the object is completely visible in the window, fade it in */
+//ICONS FADE IN CODE
+$window.scroll(function() { 
+  var $lineogo = $('.icon');
+  var $path = $lineogo.offset().top;
+  var bottom_of_object = $path + $lineogo.outerHeight();
+  var bottom_of_window = $(window).scrollTop() + $(window).height(); 
+  if( bottom_of_window > bottom_of_object ){
+    $('.lineogo').attr("class", "start");
+    console.log('line animated!');
+  }
+});
+// $(function () {
+//     $(window).scroll(function () {
+//         var $sideline = $('#sideline');
+//         var $windowsDistanceFromTop = $(window).scrollTop();   //y
+//         var $sidelineDistanceFromTop = $sideline.offset().top; //r
+//         $sidelineDistanceFromTop.height($windowsDistanceFromTop);
+//         var x = $windowsDistanceFromTop - 200;
+//         $sidelineDistanceFromTop.animate({
+//             height: x
+//         }, 250);
+//     }).scroll();
 // });
-// $('#name').hide();
-// $(document).ready(function() {
-// 	 var j = 0;
-// 	 var delay = 3500; //millisecond delay between cycles
-// 	 function cycleThru(){
-// 	         var jmax = $("ul#line3 li").length -1;
-// 	         $("ul#line3 li:eq(" + j + ")")
-// 	                 .animate({"opacity" : "1"} ,400)
-// 	                 .animate({"opacity" : "1"}, delay)
-// 	                 .animate({"opacity" : "0"}, 400, function(){
-// 	                         (j == jmax) ? j=0 : j++;
-// 	                         cycleThru();
-// 	                 });
-// 	         };
-
-// 	 cycleThru();
-
-		  //For Firefox users
-	 // $('body').bind('DOMMouseScroll', function(e){
-	 //     if(e.originalEvent.detail > 0) {
-	 //         //scroll down
-	 //         console.log('Down');
-	 //         //hide my logo on scroll down
-	 //         $( "#lion" ).fadeOut(100);
-	 //         $( "#name" ).fadeIn(100);
-	 //     }else {
-	 //         //scroll up
-	 //         console.log('Up');
-	 //         $( "#name" ).fadeOut(100);
-	 //         $( "#lion" ).fadeIn(100);
-	 //     }
-
-	 //     //prevent page fom scrolling
-	 //     return true;
-	 // });
-
-	 // For IE, Opera, Safari, and Chrome users
-	 $('body').bind('mousewheel', function(e){
-	     if(e.originalEvent.wheelDelta < 0) {
-	         //scroll down
-	         console.log('Down');
-	         //hide my logo on scroll down
-	         $( "#lion" ).fadeOut('fast', function() {
-			    // will be called when the element finishes fading out
-			    // if selector matches multiple elements it will be called once for each
-			    $( "#name" ).fadeIn('fast');
-			});
-	     }else {
-	         //scroll up
-	         console.log('Up');
-	         //hide my logo on scroll down
-	         $( "#name" ).fadeOut('fast', function() {
-			    // will be called when the element finishes fading out
-			    // if selector matches multiple elements it will be called once for each
-			    $( "#lion" ).fadeIn('fast');
-			});
-	     }
-
-	     //prevent page fom scrolling
-	     return true;
-	 });
- });
+//LINE DROP CODE 
+// $(function () {
+//     $(window).scroll(function () {
+//         var y = $(window).scrollTop();
+//         var r = $('#sideline').offset().top;
+//         var $myDiv = $('#sideline');
+//         $('#sideline').height(y);
+//         x = y - 300;
+//         $myDiv.animate({ //I am to assume that myDiv is supposed to be associated with something other than '#restricted'
+//             height: x
+//         }, 250);
+//     }).scroll();
+// });

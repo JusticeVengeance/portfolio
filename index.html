@@ -1,111 +1,114 @@
-<?php include 'header.php'; ?>
-    <!--<ul id="fftb">
-      <h1>fortune</h1>
-      <h1>favors</h1>
-      <h1>the</h1>
-      <h1>bold</h1>
-      <li class="down fill">
-        <figure id="fortune_circle">
-          <img src="img/down.gif"/>
-        </figure>
-      </li>
-    </ul> -->
-    <!--<div id="footer_nav"></div> -->        
-    <!--<div class="title">
-      <h1>A passionate bit</h1>
-      <p>I share a quality with most, in that we all seek individuality, this is a trait which inspires uniqueness. I tend to take hold of this drive in developing the most appealing, creative, and visualy-stunning product that I can. ref5esh is an excellent example of this; a charity that I began to transform disposable materials into functional decor.</p>
-    </div> -->
-    <section class="project_intro">
-      <h1>PRIDE IN ONE'S WORK</br>IS THE CAT'S MEOW</h1>
-        <div class="line_container"><!--BEGIN CIRCLE CONTAINER--></div>
+<!-- index.html -->
 
-        <!-- <ul id="line3">
-        <li>IS THE CAT'S MEOW</li>
-        <li>IS THE CR´EME DE LA CR´EME</li>
-        <li>IS THE BEE'S KNEES</li>
-        <li>IS THE MAKER'S MARK</li>
-        </ul> -->
-    </section>
-    <section class="project_section work" id="work">
-    <h1 id="about_me">MYWORK</h1>
-      <div class="sub-section projects">
-        <div class="alt_heading abs" style="opacity: 1;">
-          <span>
-            <p>I share a quality with most, in that we all seek individuality, this is a trait which inspires uniqueness. I tend to take hold of this drive in developing the most appealing, creative, and visually-stunning product that I can.</p>
-          </span>
-        </div>
-        <div class="project enter-page">
-        </div>
-        <div class="project extremedy">
-          <div class="project_container">
-            <a href="extremedy.php" class="project-copy" style="opacity: 1; top: 0px;">
-              <span class="line-1"><h1>ATD Movement</h1></span>
-              <span class="services"><p>Digital & Graphic Event Promotion</p></span>
-            </a>
-          </div>
-        </div>
-        <div class="project spokefest">
-          <div class="project_container">
-            <a href="spokefest.php" class="project-copy" style="opacity: 1; top: 0px;">
-              <span class="line-1"><h1>Spokefest</h1></span>
-              <span class="services"><p>Social Media Campaign</p></span>
-            </a>
-          </div>
-        </div>
-        <div class="project ref5esh">
-          <div class="project_container">
-            <a href="ref5esh.php" class="project-copy" style="opacity: 1; top: 0px;">
-              <span class="line-1"><h1>ref5esh</h1></span>
-              <span class="services"><p>Industrial & Print Design</p></span>
-            </a>
-          </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en" ng-app="justinVinge" ng-controller="formController">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Firebase related scripts linked below -->
+    <!-- LOAD ANGULAR -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- LOAD ANGULAR -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
 
-      </div>
-    </section>  
-    <!-- <section class="client_projects slide_section" id="work"></section>
-    <div class="slides_heading white absolute">
-      <h1>Justin Vinge Design</h1>
-      <p>I share a quality with most, in that we all seek individuality, this is a trait which inspires uniqueness. I tend to take hold of this drive in developing the most appealing, creative, and visualy-stunning product that I can.</p>
-    </div>
-    <div class="slides alt_section">
-    <div id="slide2" class="slide">
-    <div class="title">
-      <h1>ATD Movement</h1>
-      <p>Digital & graphical event promotion</p>
-    </div>
-    </div>
 
-    <div id="slide3" class="slide">
-    <div class="title">
-      <h1>ref5esh</h1>
-      <p>Industrial & Print Design</p>
-    </div>
-    </div>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCDW0OT7ttMfNT2kHj-fXZ9W0eRnU_pbOQ",
+    authDomain: "personal-portfolio-735a2.firebaseapp.com",
+    databaseURL: "https://personal-portfolio-735a2.firebaseio.com",
+    storageBucket: "personal-portfolio-735a2.appspot.com",
+  };
+  firebase.initializeApp(config);
+  // Get a reference to the database service
+  var database = firebase.database();
+</script>
+    <!-- LOAD ANGULARFIRE FOR FIREBASE -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+    <!-- LOAD FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!-- LINK STYLES -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
-    <div id="slide4" class="slide">
-    <div class="title">
-      <h1>SpokeFest</h1>
-      <p>Digital event promotion in social media</p>
-    </div>
-    </div>  
-    </div> --><!--END SLIDE CONTAINER-->
-    <!-- <div class="section" id="goodstuff">
-      <h1>Logo Design</h1>
-      <div class="logos">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      <img src="img/ref5esh_Logo.png">
-      </div>
-      <div class="comps">
-      <img src="img/deviine_comp.png">
-      <img src="img/deviine_comp.png">
-      </div>
-      <h1>My name is Justin Daniel Vinge, I am a designer and a full stack web devloper. I work mostly with HTML, PHP, CSS, and Javascript. I take pride in everything I seek to accomplish, and pride in one's work is the best thing you can ask for.  </h1>
-      <img src="img/spokefest_square.jpg" alt="" />
-    </div>
-    <div class="section" id="about"></div> -->
-  </body>
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <!-- PROCESS FORM WITH AJAX (NEW) -->
+
+<script>
+// define angular module/app
+var formApp = angular.module('formApp', []);
+
+  // create angular controller and pass in $scope and $http
+function formController($scope, $http) {
+
+    // create a blank object to hold our form information
+    // $scope will allow this to pass between controller and view
+    $scope.formData = {};
+
+    // process the form
+    $scope.processForm = function() {
+          $http({
+          method  : 'POST',
+          url     : 'php/process.php',
+          data    : $.param($scope.formData),  // pass in data as strings
+          headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
+        })
+        .success(function(data) {
+        console.log(data);
+            if (!data.success) {
+            $('#form-div').animate({left:"0px"});
+            //Failed form submission message
+            
+              $( "div.failure" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+            
+              // if not successful, bind errors to error variables
+              $scope.errorName = data.errors.name;
+              $scope.errorEmail = data.errors.email;
+              $scope.errorComments = data.errors.comments;
+            } else {
+                // if successful, bind success message to message
+                $scope.message = data.message;
+            }
+            //This bit of code handles the push of field data to firebase if all fields are complete.
+            firebase.database().ref('users/' + $scope.formData.name).push({
+                username: $scope.formData.name,
+                email: $scope.formData.email,
+                comments: $scope.formData.comments
+            });
+            //Successful form submission message
+
+              $( "div.success" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+            
+        });
+    };
+}
+// $("#button-blue").click(function(e){
+//     if (!data.success) {
+//         $('#form-div').animate({left:"0px"});
+//         e.preventDefault();
+//         e.stopPropagation();
+//     };
+// });
+</script>
+
+</head>
+
+<!-- apply the module and controller to the body -->
+<body>
+<!-- PROCESS FORM WITH AJAX (NEW) -->
+
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div ui-view></div>
+
+</body>
 </html>
