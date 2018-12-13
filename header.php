@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Justin Vinge | Spokefest</title>
+    <title>Justin Vinge</title>
     <meta name="Justin Vinge" content="SitePoint">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -23,7 +23,7 @@
       <a href="index.php">  
         <div id="logo">
           <div id="lion"><img class="top_left" src="img/logo5.png"/></div>
-          <div id="name"><h2 class="top_left">JUSTIN<br>VINGE<br>DESIGN</h2></div>
+          <div id="name"><h2 class="top_left">JUSTIN<br>VINGE</h2></div>
         </div><!--END LOGO DIV-->
       </a>
   </div>

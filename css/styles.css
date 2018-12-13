@@ -544,6 +544,8 @@ figure#fortune-circle {
 }
 #goodstuff .comps {
   background-color: #dddddd;
+  border-bottom: 4px solid #000;
+  border-top: 4px solid #000;
   float:left;
   margin:0;
   padding-top: 4px;
@@ -553,6 +555,9 @@ figure#fortune-circle {
 #goodstuff .comps li img {
   float: left;
   list-style: none;
+}
+#goodstuff .logos {
+  padding: 0;
 }
 #goodstuff.section ul.comps.print li:nth-child(even) .half {
   float: right;
@@ -632,10 +637,10 @@ figure#fortune-circle {
   height: 200px;
 }
 #icons .icon:nth-child(1), #icons .icon:nth-child(4) {
-  margin-top: 610px;
+  margin-top: 400px;
 }
 #icons .icon:nth-child(2), #icons .icon:nth-child(3) {
-  margin-top: 620px;
+  margin-top: 410px;
 }
 #icons .icon:nth-child(1) {
   width : 17%;
@@ -1011,7 +1016,7 @@ figure#fortune-circle {
     border-top: 8px solid #333333;
     border-bottom-left-radius: 90%;
     border-bottom-right-radius: 90%;
-    height: 788px;
+    height: 505px;
     left: 50%;
     margin-left: -1500px;
     overflow: hidden;
@@ -1248,6 +1253,12 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #text-container {
   width: 100%;
 }
+.full-centered {
+  display: block;
+  margin: 0 auto;
+  max-width: 1080px;
+  position: relative;
+}
 .top-image {
   width:100%;
 }
@@ -1408,6 +1419,7 @@ ul#line3 li {
 a#modal-btn {
   border: none;
   color: #333333;
+  font-size: 16px;
   transition: color .5s ease-in-out;
   -moz-transition: color .5s ease-in-out;
   -webkit-transition: color .5s ease-in-out;
